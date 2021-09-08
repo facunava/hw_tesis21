@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -146,10 +146,10 @@ F 3 "" H 9550 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 00_lib_sch:BC337 Q?
+L v0-rescue:BC337-00_lib_sch Q1
 U 1 1 60FC0A3B
 P 4000 3100
-F 0 "Q?" H 4191 3146 50  0000 L CNN
+F 0 "Q1" H 4191 3146 50  0000 L CNN
 F 1 "BC337" H 4191 3055 50  0000 L CNN
 F 2 "" H 4200 3025 50  0001 L CIN
 F 3 "" H 4000 3100 50  0001 L CNN
@@ -157,10 +157,10 @@ F 3 "" H 4000 3100 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 00_lib_sch:MOC3041M U?
+L 00_lib_sch:MOC3041M U4
 U 1 1 60FC1318
 P 5300 3300
-F 0 "U?" H 5300 3625 50  0000 C CNN
+F 0 "U4" H 5300 3625 50  0000 C CNN
 F 1 "MOC3041M" H 5300 3534 50  0000 C CNN
 F 2 "" H 5100 3100 50  0001 L CIN
 F 3 "" H 5300 3300 50  0001 L CNN
@@ -168,21 +168,21 @@ F 3 "" H 5300 3300 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 00_lib_sch:Device_R_US R?
+L 00_lib_sch:Device_R_US R1
 U 1 1 60FC204D
-P 2750 3200
-F 0 "R?" H 2818 3246 50  0000 L CNN
-F 1 "Device_R_US" H 2818 3155 50  0000 L CNN
-F 2 "" V 2790 3190 50  0001 C CNN
-F 3 "" H 2750 3200 50  0001 C CNN
-	1    2750 3200
+P 3100 3100
+F 0 "R1" H 3168 3146 50  0000 L CNN
+F 1 "Device_R_US" H 3168 3055 50  0000 L CNN
+F 2 "" V 3140 3090 50  0001 C CNN
+F 3 "" H 3100 3100 50  0001 C CNN
+	1    3100 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L 00_lib_sch:Connector_Generic_Conn_01x02 J?
+L 00_lib_sch:Connector_Generic_Conn_01x02 J10
 U 1 1 60FC6432
 P 3100 5100
-F 0 "J?" H 3180 5092 50  0000 L CNN
+F 0 "J10" H 3180 5092 50  0000 L CNN
 F 1 "Connector_Generic_Conn_01x02" H 3180 5001 50  0000 L CNN
 F 2 "" H 3100 5100 50  0001 C CNN
 F 3 "" H 3100 5100 50  0001 C CNN
@@ -190,10 +190,10 @@ F 3 "" H 3100 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 00_lib_sch:Connector_Generic_Conn_01x08 J?
+L 00_lib_sch:Connector_Generic_Conn_01x08 J9
 U 1 1 60FC67F3
 P 3100 4200
-F 0 "J?" H 3180 4192 50  0000 L CNN
+F 0 "J9" H 3180 4192 50  0000 L CNN
 F 1 "Connector_Generic_Conn_01x08" H 3180 4101 50  0000 L CNN
 F 2 "" H 3100 4200 50  0001 C CNN
 F 3 "" H 3100 4200 50  0001 C CNN
@@ -201,14 +201,42 @@ F 3 "" H 3100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 00_lib_sch:Triac_Thyristor_Mac97a8 Q?
+L 00_lib_sch:Triac_Thyristor_Mac97a8 Q2
 U 1 1 60FC87F5
 P 5350 3950
-F 0 "Q?" H 5478 3996 50  0000 L CNN
+F 0 "Q2" H 5478 3996 50  0000 L CNN
 F 1 "Triac_Thyristor_Mac97a8" H 5478 3905 50  0000 L CNN
 F 2 "" H 5550 3875 50  0001 L CIN
 F 3 "" H 5350 3950 50  0001 L CNN
 	1    5350 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 6122D0A6
+P 2800 3100
+F 0 "C?" H 2915 3146 50  0000 L CNN
+F 1 "C" H 2915 3055 50  0000 L CNN
+F 2 "" H 2838 2950 50  0001 C CNN
+F 3 "~" H 2800 3100 50  0001 C CNN
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 6122DC39
+P 2450 3100
+F 0 "C?" H 2568 3146 50  0000 L CNN
+F 1 "CP" H 2568 3055 50  0000 L CNN
+F 2 "" H 2488 2950 50  0001 C CNN
+F 3 "~" H 2450 3100 50  0001 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1350 8950 4150 1850
+U 61393EE8
+F0 "Sheet61393EE7" 50
+F1 "probando.sch" 50
+$EndSheet
 $EndSCHEMATC
