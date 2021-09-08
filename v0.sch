@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -212,10 +212,10 @@ F 3 "" H 5350 3950 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 6122D0A6
 P 2800 3100
-F 0 "C?" H 2915 3146 50  0000 L CNN
+F 0 "C2" H 2915 3146 50  0000 L CNN
 F 1 "C" H 2915 3055 50  0000 L CNN
 F 2 "" H 2838 2950 50  0001 C CNN
 F 3 "~" H 2800 3100 50  0001 C CNN
@@ -223,14 +223,23 @@ F 3 "~" H 2800 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C1
 U 1 1 6122DC39
 P 2450 3100
-F 0 "C?" H 2568 3146 50  0000 L CNN
+F 0 "C1" H 2568 3146 50  0000 L CNN
 F 1 "CP" H 2568 3055 50  0000 L CNN
 F 2 "" H 2488 2950 50  0001 C CNN
 F 3 "~" H 2450 3100 50  0001 C CNN
 	1    2450 3100
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 6950 5700 850  650 
+U 61391A6D
+F0 "Sheet61391A6C" 50
+F1 "Fuente.sch" 50
+F2 "In" I L 6950 5850 50 
+F3 "Out" I R 7800 5850 50 
+F4 "Gnd" I R 7800 6150 50 
+$EndSheet
 $EndSCHEMATC

@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP1 C1
+U 1 1 61399376
+P 3600 3950
+F 0 "C1" H 3715 3996 50  0000 L CNN
+F 1 "CP1" H 3715 3905 50  0000 L CNN
+F 2 "" H 3600 3950 50  0001 C CNN
+F 3 "~" H 3600 3950 50  0001 C CNN
+	1    3600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L xl4005e1:XL4005E1 U1
+U 1 1 613951E7
+P 5100 3850
+F 0 "U1" H 5694 4103 60  0000 L CNN
+F 1 "XL4005E1" H 5694 3997 60  0000 L CNN
+F 2 "" H 5100 3850 60  0001 C CNN
+F 3 "" H 5100 3850 60  0000 C CNN
+F 4 "N01-0001" H 5350 3650 50  0000 C BNN "Part"
+	1    5100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N5824:1N5824 D1
+U 1 1 613925E0
+P 6600 3750
+F 0 "D1" V 6646 3670 50  0000 R CNN
+F 1 "1N5824" V 6555 3670 50  0000 R CNN
+F 2 "" H 6600 3750 50  0000 L BNN
+F 3 "" H 6600 3750 50  0001 L BNN
+F 4 "2" H 6600 3750 50  0001 L BNN "PARTREV"
+F 5 "Microsemi" H 6600 3750 50  0001 L BNN "MANUFACTURER"
+F 6 "IPC 7351B" H 6600 3750 50  0001 L BNN "STANDARD"
+F 7 "13.43mm" H 6600 3750 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    6600 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C4
+U 1 1 6139DAFE
+P 7250 3750
+F 0 "C4" H 7365 3796 50  0000 L CNN
+F 1 "CP2" H 7365 3705 50  0000 L CNN
+F 2 "" H 7250 3750 50  0001 C CNN
+F 3 "~" H 7250 3750 50  0001 C CNN
+	1    7250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 613A086D
+P 6150 2300
+F 0 "C3" H 6268 2346 50  0000 L CNN
+F 1 "CP" H 6268 2255 50  0000 L CNN
+F 2 "" H 6188 2150 50  0001 C CNN
+F 3 "~" H 6150 2300 50  0001 C CNN
+	1    6150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 613A8405
+P 6950 3200
+F 0 "L1" V 6769 3200 50  0000 C CNN
+F 1 "L_Core_Ferrite" V 6860 3200 50  0000 C CNN
+F 2 "" H 6950 3200 50  0001 C CNN
+F 3 "~" H 6950 3200 50  0001 C CNN
+	1    6950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 613AC7AE
+P 5100 4500
+F 0 "#PWR02" H 5100 4250 50  0001 C CNN
+F 1 "GND" H 5105 4327 50  0000 C CNN
+F 2 "" H 5100 4500 50  0001 C CNN
+F 3 "" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4350 6600 4350
+Wire Wire Line
+	6600 4350 6600 3950
+Connection ~ 5100 4350
+Wire Wire Line
+	7250 3900 7250 4350
+Wire Wire Line
+	7250 4350 6600 4350
+Connection ~ 6600 4350
+Wire Wire Line
+	6800 3200 6600 3200
+Wire Wire Line
+	6600 3200 6600 3550
+Wire Wire Line
+	7100 3200 7250 3200
+Wire Wire Line
+	7250 3200 7250 3600
+Wire Wire Line
+	5650 3750 5650 3200
+Wire Wire Line
+	5650 3200 6600 3200
+Connection ~ 6600 3200
+Wire Wire Line
+	4550 3550 4550 3750
+Wire Wire Line
+	5100 4250 5100 4350
+Connection ~ 4550 3550
+$Comp
+L power:GND #PWR01
+U 1 1 613B2387
+P 4250 2600
+F 0 "#PWR01" H 4250 2350 50  0001 C CNN
+F 1 "GND" H 4255 2427 50  0000 C CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2300 4250 2600
+Wire Wire Line
+	7250 2300 7250 3200
+Connection ~ 7250 3200
+$Comp
+L Device:R_US R1
+U 1 1 613BC044
+P 5100 2300
+F 0 "R1" V 4895 2300 50  0000 C CNN
+F 1 "R_US" V 4986 2300 50  0000 C CNN
+F 2 "" V 5140 2290 50  0001 C CNN
+F 3 "~" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 2300 4950 2300
+Wire Wire Line
+	5250 2300 5650 2300
+Wire Wire Line
+	5650 2850 5650 2300
+$Comp
+L Device:R_US R2
+U 1 1 613B4622
+P 6150 2850
+F 0 "R2" V 5945 2850 50  0000 C CNN
+F 1 "R_US" V 6036 2850 50  0000 C CNN
+F 2 "" V 6190 2840 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 2300 6600 2300
+Wire Wire Line
+	6300 2850 6600 2850
+Wire Wire Line
+	6600 2850 6600 2300
+Connection ~ 6600 2300
+Wire Wire Line
+	6600 2300 7250 2300
+Connection ~ 5650 2300
+Wire Wire Line
+	5650 2300 6000 2300
+Wire Wire Line
+	5650 2850 6000 2850
+$Comp
+L Device:CP C2
+U 1 1 613989DD
+P 4050 3950
+F 0 "C2" H 4168 3996 50  0000 L CNN
+F 1 "CP" H 4168 3905 50  0000 L CNN
+F 2 "" H 4088 3800 50  0001 C CNN
+F 3 "~" H 4050 3950 50  0001 C CNN
+	1    4050 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3800 3600 3550
+Wire Wire Line
+	3600 3550 4050 3550
+Wire Wire Line
+	4050 3800 4050 3550
+Connection ~ 4050 3550
+Wire Wire Line
+	4050 3550 4550 3550
+Wire Wire Line
+	4050 4100 4050 4350
+Connection ~ 4050 4350
+Wire Wire Line
+	4050 4350 5100 4350
+Wire Wire Line
+	3600 4100 3600 4350
+Connection ~ 3600 4350
+Wire Wire Line
+	3600 4350 4050 4350
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 613D37FA
+P 2850 3900
+F 0 "J1" H 2768 4117 50  0000 C CNN
+F 1 "Conn_01x02" H 2768 4026 50  0000 C CNN
+F 2 "" H 2850 3900 50  0001 C CNN
+F 3 "~" H 2850 3900 50  0001 C CNN
+	1    2850 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 613D5B1C
+P 8100 3700
+F 0 "J2" H 8180 3692 50  0000 L CNN
+F 1 "Conn_01x02" H 8180 3601 50  0000 L CNN
+F 2 "" H 8100 3700 50  0001 C CNN
+F 3 "~" H 8100 3700 50  0001 C CNN
+	1    8100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3200 7900 3200
+Wire Wire Line
+	7900 3200 7900 3700
+Wire Wire Line
+	7900 3800 7900 4350
+Wire Wire Line
+	7900 4350 7250 4350
+Connection ~ 7250 4350
+Wire Wire Line
+	3050 3900 3050 3550
+Wire Wire Line
+	3050 3550 3600 3550
+Connection ~ 3600 3550
+Wire Wire Line
+	3050 4000 3050 4350
+Wire Wire Line
+	3050 4350 3600 4350
+Wire Wire Line
+	5100 3050 5100 2850
+Wire Wire Line
+	5100 2850 5650 2850
+Connection ~ 5650 2850
+Wire Notes Line
+	2350 1800 8900 1800
+Wire Notes Line
+	8900 1800 8900 4850
+Wire Notes Line
+	8900 4850 2350 4850
+Wire Notes Line
+	2350 4850 2350 1800
+Text Notes 4400 5200 0    79   ~ 16
+Modulo Ajustable de fuente de Alimentación\nDC-DC STEP (5-32 V a 0.8-24 V) - 5A 
+Wire Wire Line
+	7850 3000 7900 3000
+Wire Wire Line
+	7900 3000 7900 3200
+Connection ~ 7900 3200
+Wire Wire Line
+	3050 3250 3050 3550
+Connection ~ 3050 3550
+Text HLabel 3000 3250 0    50   Input ~ 0
+In
+Wire Wire Line
+	3000 3250 3050 3250
+Text HLabel 7850 3000 0    50   Input ~ 0
+Out
+Wire Wire Line
+	5100 4350 5100 4450
+Text HLabel 4850 4450 0    50   Input ~ 0
+Gnd
+Wire Wire Line
+	4850 4450 5100 4450
+Connection ~ 5100 4450
+Wire Wire Line
+	5100 4450 5100 4500
+$EndSCHEMATC
