@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -23,33 +23,6 @@ F 2 "" H 3600 3950 50  0001 C CNN
 F 3 "~" H 3600 3950 50  0001 C CNN
 	1    3600 3950
 	1    0    0    -1  
-$EndComp
-$Comp
-L xl4005e1:XL4005E1 U1
-U 1 1 613951E7
-P 5100 3850
-F 0 "U1" H 5694 4103 60  0000 L CNN
-F 1 "XL4005E1" H 5694 3997 60  0000 L CNN
-F 2 "" H 5100 3850 60  0001 C CNN
-F 3 "" H 5100 3850 60  0000 C CNN
-F 4 "N01-0001" H 5350 3650 50  0000 C BNN "Part"
-	1    5100 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1N5824:1N5824 D1
-U 1 1 613925E0
-P 6600 3750
-F 0 "D1" V 6646 3670 50  0000 R CNN
-F 1 "1N5824" V 6555 3670 50  0000 R CNN
-F 2 "" H 6600 3750 50  0000 L BNN
-F 3 "" H 6600 3750 50  0001 L BNN
-F 4 "2" H 6600 3750 50  0001 L BNN "PARTREV"
-F 5 "Microsemi" H 6600 3750 50  0001 L BNN "MANUFACTURER"
-F 6 "IPC 7351B" H 6600 3750 50  0001 L BNN "STANDARD"
-F 7 "13.43mm" H 6600 3750 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-	1    6600 3750
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:CP1 C4
@@ -96,8 +69,6 @@ F 3 "" H 5100 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 4350 6600 4350
-Wire Wire Line
 	6600 4350 6600 3950
 Connection ~ 5100 4350
 Wire Wire Line
@@ -120,9 +91,6 @@ Wire Wire Line
 Connection ~ 6600 3200
 Wire Wire Line
 	4550 3550 4550 3750
-Wire Wire Line
-	5100 4250 5100 4350
-Connection ~ 4550 3550
 $Comp
 L power:GND #PWR01
 U 1 1 613B2387
@@ -208,49 +176,10 @@ Wire Wire Line
 	4050 4350 5100 4350
 Wire Wire Line
 	3600 4100 3600 4350
-Connection ~ 3600 4350
 Wire Wire Line
 	3600 4350 4050 4350
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 613D37FA
-P 2850 3900
-F 0 "J1" H 2768 4117 50  0000 C CNN
-F 1 "Conn_01x02" H 2768 4026 50  0000 C CNN
-F 2 "" H 2850 3900 50  0001 C CNN
-F 3 "~" H 2850 3900 50  0001 C CNN
-	1    2850 3900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 613D5B1C
-P 8100 3700
-F 0 "J2" H 8180 3692 50  0000 L CNN
-F 1 "Conn_01x02" H 8180 3601 50  0000 L CNN
-F 2 "" H 8100 3700 50  0001 C CNN
-F 3 "~" H 8100 3700 50  0001 C CNN
-	1    8100 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 3200 7900 3200
-Wire Wire Line
-	7900 3200 7900 3700
-Wire Wire Line
-	7900 3800 7900 4350
-Wire Wire Line
-	7900 4350 7250 4350
 Connection ~ 7250 4350
-Wire Wire Line
-	3050 3900 3050 3550
-Wire Wire Line
-	3050 3550 3600 3550
 Connection ~ 3600 3550
-Wire Wire Line
-	3050 4000 3050 4350
-Wire Wire Line
-	3050 4350 3600 4350
 Wire Wire Line
 	5100 3050 5100 2850
 Wire Wire Line
@@ -264,29 +193,70 @@ Wire Notes Line
 	8900 4850 2350 4850
 Wire Notes Line
 	2350 4850 2350 1800
-Text Notes 4400 5200 0    79   ~ 16
+Text Notes 4400 5200 0    79   ~ 0
 Modulo Ajustable de fuente de Alimentación\nDC-DC STEP (5-32 V a 0.8-24 V) - 5A 
+Text HLabel 2050 3550 0    50   Input ~ 0
+[24VAC_in]
 Wire Wire Line
-	7850 3000 7900 3000
+	2950 4350 3600 4350
+Connection ~ 3600 4350
 Wire Wire Line
-	7900 3000 7900 3200
-Connection ~ 7900 3200
+	2050 3550 3600 3550
 Wire Wire Line
-	3050 3250 3050 3550
-Connection ~ 3050 3550
-Text HLabel 3000 3250 0    50   Input ~ 0
-In
+	5100 4350 5100 4500
+Text HLabel 8100 3200 2    50   Output ~ 0
+[+5VDC]
 Wire Wire Line
-	3000 3250 3050 3250
-Text HLabel 7850 3000 0    50   Input ~ 0
-Out
+	7250 3200 8100 3200
+Text HLabel 8150 4350 2    50   Output ~ 0
+[GND_out]
 Wire Wire Line
-	5100 4350 5100 4450
-Text HLabel 4850 4450 0    50   Input ~ 0
-Gnd
+	7250 4350 8150 4350
+Text HLabel 8100 5650 2    50   Output ~ 0
+[+3V3DC]
+Text HLabel 8100 6050 2    50   Output ~ 0
+[GND_out]
+Wire Notes Line
+	6500 5450 7750 5450
+Wire Notes Line
+	7750 5450 7750 6300
+Wire Notes Line
+	7750 6300 6500 6300
+Wire Notes Line
+	6500 6300 6500 5450
+Text Notes 6600 5950 0    50   ~ 0
+INVESTIGAR REGULADOR O \nFUENTE SWTH, 3,3V PARA\nSENSORES  y ESP32
+Text HLabel 1950 4350 0    50   Input ~ 0
+[AGND]
 Wire Wire Line
-	4850 4450 5100 4450
-Connection ~ 5100 4450
+	5100 4250 5100 4350
+$Comp
+L 00_lib_sch:1N5824 D?
+U 1 1 61A8C44B
+P 6600 3750
+F 0 "D?" V 6646 3670 50  0000 R CNN
+F 1 "1N5824" V 6555 3670 50  0000 R CNN
+F 2 "DIOAD1898W129L762D1143" H 6600 3750 50  0001 L BNN
+F 3 "" H 6600 3750 50  0001 L BNN
+F 4 "2" H 6600 3750 50  0001 L BNN "PARTREV"
+F 5 "Microsemi" H 6600 3750 50  0001 L BNN "MANUFACTURER"
+F 6 "IPC 7351B" H 6600 3750 50  0001 L BNN "STANDARD"
+F 7 "13.43mm" H 6600 3750 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    6600 3750
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	5100 4450 5100 4500
+	5100 4350 6600 4350
+$Comp
+L 00_lib_sch:XL4005E1 U?
+U 1 1 61A8D382
+P 5100 3850
+F 0 "U?" H 5200 4450 60  0000 L CNN
+F 1 "XL4005E1" H 5250 3650 60  0000 L CNN
+F 2 "" H 5100 3850 60  0000 C CNN
+F 3 "" H 5100 3850 60  0000 C CNN
+	1    5100 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 3550
 $EndSCHEMATC

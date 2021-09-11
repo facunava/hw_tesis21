@@ -1,6 +1,3 @@
 (sym_lib_table
   (lib (name 00_lib_sch)(type Legacy)(uri ${KIPRJMOD}/lib_sch/lib_sch.lib)(options "")(descr ""))
-  (lib (name v0-rescue)(type Legacy)(uri ${KIPRJMOD}/v0-rescue.lib)(options "")(descr ""))
-  (lib (name xl4005e1)(type Legacy)(uri C:/Users/Mayco/Documents/Kicad/Symbol/xl4005e1.lib)(options "")(descr ""))
-  (lib (name 1N5824)(type Legacy)(uri C:/Users/Mayco/Documents/Kicad/Symbol/1N5824.lib)(options "")(descr ""))
 )
