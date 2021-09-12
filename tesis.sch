@@ -20,18 +20,12 @@ F0 "Core" 50
 F1 "Core.sch" 50
 $EndSheet
 $Sheet
-S 7350 1450 900  1000
-U 61434A7C
-F0 "Outputs" 50
-F1 "Outputs.sch" 50
-$EndSheet
-$Sheet
 S 3350 2650 850  950 
 U 61438B2D
 F0 "inputs" 50
 F1 "inputs.sch" 50
-F2 "[SDA]" I R 4200 3400 50 
-F3 "[SCL]" I R 4200 3500 50 
+F2 "[SCL_inputs]" I R 4200 3500 50 
+F3 "[SDA_inputs]" I R 4200 3400 50 
 $EndSheet
 $Sheet
 S 3100 1450 1100 700 
@@ -104,4 +98,12 @@ Wire Wire Line
 	2300 1850 3100 1850
 Wire Wire Line
 	2300 1750 3100 1750
+$Sheet
+S 7250 1450 850  950 
+U 61434A7C
+F0 "Outputs" 50
+F1 "Outputs.sch" 50
+F2 "[SCL_outputs]" I L 7250 2300 50 
+F3 "[SDA_outputs]" I L 7250 2200 50 
+$EndSheet
 $EndSCHEMATC
