@@ -537,25 +537,25 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 61A00DC7
-P 8400 1550
-F 0 "J?" H 8480 1542 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 8480 1451 50  0000 L CNN
-F 2 "" H 8400 1550 50  0001 C CNN
-F 3 "~" H 8400 1550 50  0001 C CNN
-	1    8400 1550
+P 10500 3800
+F 0 "J?" H 10580 3792 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10580 3701 50  0000 L CNN
+F 2 "" H 10500 3800 50  0001 C CNN
+F 3 "~" H 10500 3800 50  0001 C CNN
+	1    10500 3800
 	1    0    0    -1  
 $EndComp
-Text HLabel 8000 1550 0    50   Input ~ 0
+Text HLabel 10100 3800 0    50   Input ~ 0
 [AGND]
 Wire Wire Line
-	8200 1550 8100 1550
+	10300 3800 10200 3800
 Wire Wire Line
-	8200 1650 8100 1650
+	10300 3900 10200 3900
 Wire Wire Line
-	8100 1650 8100 1550
-Connection ~ 8100 1550
+	10200 3900 10200 3800
+Connection ~ 10200 3800
 Wire Wire Line
-	8100 1550 8000 1550
+	10200 3800 10100 3800
 $Comp
 L Device:R R?
 U 1 1 61A05224
@@ -738,4 +738,6 @@ Wire Wire Line
 	2900 4900 2900 5000
 Text Notes 7150 2250 0    50   ~ 0
 Ojo, aca pusimos el moc3043 
+Text Notes 8850 2200 0    50   ~ 0
+Si 24VAC es FASE y  Si llamamos \nAGND = NEUTRO entonces está bien
 $EndSCHEMATC

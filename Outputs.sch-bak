@@ -736,4 +736,6 @@ Wire Wire Line
 Connection ~ 2900 4900
 Wire Wire Line
 	2900 4900 2900 5000
+Text Notes 7150 2250 0    50   ~ 0
+Ojo, aca pusimos el moc3043 
 $EndSCHEMATC
