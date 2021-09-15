@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -133,10 +133,8 @@ F 3 "" V 2950 1600 50  0001 C CNN
 	1    2950 1550
 	1    0    0    1   
 $EndComp
-Text HLabel 7400 3300 2    50   Input ~ 0
-[SDA]
 Text HLabel 7400 3400 2    50   Input ~ 0
-[SCL]
+[SCL_inputs]
 $Comp
 L 00_lib_sch:Interface_Expansion_TCA9548APWR U?
 U 1 1 6143B2AE
@@ -1335,4 +1333,6 @@ F 3 "~" H 7700 4050 50  0001 C CNN
 	1    7700 4050
 	1    0    0    -1  
 $EndComp
+Text HLabel 7400 3300 2    50   Input ~ 0
+[SDA_inputs]
 $EndSCHEMATC
