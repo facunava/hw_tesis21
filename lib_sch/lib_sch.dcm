@@ -1,3 +1,80 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ACS712-05
+D ±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8
+K hall effect current monitor sensor isolated
+F http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en
+$ENDCMP
+#
+$CMP AT24C32
+D I2C Serial EEPROM, 1Kb (128x8) with Unique Serial Number, UDFN8
+K I2C Serial EEPROM Nonvolatile Memory
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf
+$ENDCMP
+#
+$CMP Antenna_Shield
+D Antenna with extra pin for shielding
+K antenna
+F ~
+$ENDCMP
+#
+$CMP Battery_Cell
+D Single-cell battery
+K battery cell
+F ~
+$ENDCMP
+#
+$CMP Buzzer
+D Buzzer, polarized
+K quartz resonator ceramic
+F ~
+$ENDCMP
+#
+$CMP DF06S
+D Single-Phase Bridge Rectifier
+K rectifier acdc
+$ENDCMP
+#
+$CMP DS3231M
+D Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16
+K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
+F http://datasheets.maximintegrated.com/en/ds/DS3231.pdf
+$ENDCMP
+#
+$CMP LED_ALT
+D Light emitting diode, filled shape
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP Screw_Terminal_01x04
+D Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K screw terminal
+F ~
+$ENDCMP
+#
+$CMP SolderJumper_2_Open
+D Solder Jumper, 2-pole, open
+K solder jumper SPST
+F ~
+$ENDCMP
+#
+$CMP WS2812
+D RGB LED with integrated controller
+K RGB LED NeoPixel addressable
+F https://cdn-shop.adafruit.com/datasheets/WS2812.pdf
+$ENDCMP
+#
+$CMP WS2812S
+D RGB LED with integrated controller
+K RGB LED addressable
+F http://www.world-semi.com/DownLoadFile/115
+$ENDCMP
+#
+$CMP jumper
+D Solder Jumper, 2-pole, open
+K solder jumper SPST
+F ~
+$ENDCMP
+#
 #End Doc Library

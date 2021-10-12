@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -16,57 +16,713 @@ $EndDescr
 $Comp
 L 00_lib_sch:RPi_GPIO MOD?
 U 1 1 61414880
-P 1250 1200
+P 7350 2400
 AR Path="/61414880" Ref="MOD?"  Part="1" 
-AR Path="/61410FC3/61414880" Ref="MOD?"  Part="1" 
-F 0 "MOD?" H 2000 1487 60  0000 C CNN
-F 1 "RPi_GPIO" H 2000 1381 60  0000 C CNN
-F 2 "00_lib_fp:RPi_fp" H 1250 1200 60  0001 C CNN
-F 3 "" H 1250 1200 60  0000 C CNN
-	1    1250 1200
+AR Path="/61410FC3/61414880" Ref="MOD301"  Part="1" 
+F 0 "MOD301" H 7500 2550 60  0000 C CNN
+F 1 "RPi_GPIO" H 8650 350 60  0000 C CNN
+F 2 "00_lib_fp:PinSocket_2x20_P2.54mm_Vertical_SMD" H 7350 2400 60  0001 C CNN
+F 3 "" H 7350 2400 60  0000 C CNN
+	1    7350 2400
 	1    0    0    -1  
 $EndComp
 $Comp
 L 00_lib_sch:ESP32-WROOM U?
 U 1 1 614148B6
-P 6100 2600
+P 4450 2950
 AR Path="/614148B6" Ref="U?"  Part="1" 
-AR Path="/61410FC3/614148B6" Ref="U?"  Part="1" 
-F 0 "U?" H 6075 3987 60  0000 C CNN
-F 1 "ESP32-WROOM" H 6075 3881 60  0000 C CNN
-F 2 "00_lib_fp:ESP32-WROOM" H 6450 3950 60  0001 C CNN
-F 3 "" H 5650 3050 60  0001 C CNN
-	1    6100 2600
+AR Path="/61410FC3/614148B6" Ref="U301"  Part="1" 
+F 0 "U301" H 3800 4200 60  0000 C CNN
+F 1 "ESP32-WROOM" H 4850 1000 60  0000 C CNN
+F 2 "00_lib_fp:ESP32-WROOM" H 4800 4300 60  0001 C CNN
+F 3 "" H 4000 3400 60  0001 C CNN
+	1    4450 2950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1050 1300
-NoConn ~ 1050 1400
-NoConn ~ 1050 1500
-NoConn ~ 1050 1700
-NoConn ~ 1050 1800
-NoConn ~ 1050 1900
-NoConn ~ 1050 2000
-NoConn ~ 1050 1200
-NoConn ~ 1050 2100
-NoConn ~ 1050 2200
-NoConn ~ 1050 2300
-NoConn ~ 1050 2500
-NoConn ~ 1050 2600
-NoConn ~ 1050 2700
-NoConn ~ 1050 2800
-NoConn ~ 1050 2900
-NoConn ~ 1050 3000
-NoConn ~ 2950 3100
-NoConn ~ 2950 3000
-NoConn ~ 2950 2900
-NoConn ~ 2950 2700
-NoConn ~ 2950 2500
-NoConn ~ 2950 2400
-NoConn ~ 2950 2300
-NoConn ~ 2950 2200
-NoConn ~ 2950 2000
-NoConn ~ 2950 1900
-NoConn ~ 2950 1700
-NoConn ~ 2950 1600
-NoConn ~ 2950 1500
+NoConn ~ 7150 2500
+NoConn ~ 7150 2600
+NoConn ~ 7150 2700
+NoConn ~ 7150 2900
+NoConn ~ 7150 3000
+NoConn ~ 7150 3100
+NoConn ~ 7150 3200
+NoConn ~ 7150 2400
+NoConn ~ 7150 3300
+NoConn ~ 7150 3400
+NoConn ~ 7150 3500
+NoConn ~ 7150 3700
+NoConn ~ 7150 3800
+NoConn ~ 7150 3900
+NoConn ~ 7150 4000
+NoConn ~ 7150 4100
+NoConn ~ 7150 4200
+NoConn ~ 9050 4300
+NoConn ~ 9050 4200
+NoConn ~ 9050 4100
+NoConn ~ 9050 3900
+NoConn ~ 9050 3700
+NoConn ~ 9050 3600
+NoConn ~ 9050 3500
+NoConn ~ 9050 3400
+NoConn ~ 9050 3200
+NoConn ~ 9050 3100
+NoConn ~ 9050 2900
+NoConn ~ 9050 2800
+NoConn ~ 9050 2700
+$Comp
+L 00_lib_sch:C C301
+U 1 1 614AE0B3
+P 6050 2850
+F 0 "C301" H 6150 2850 50  0000 L CNN
+F 1 "100n" H 6150 2750 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6088 2700 50  0001 C CNN
+F 3 "" H 6050 2850 50  0001 C CNN
+	1    6050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:R R301
+U 1 1 614AE3BA
+P 6050 2450
+F 0 "R301" V 5950 2400 50  0000 L CNN
+F 1 "10k" V 6050 2375 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5980 2450 50  0001 C CNN
+F 3 "" H 6050 2450 50  0001 C CNN
+	1    6050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:GND #PWR0227
+U 1 1 614AEF2F
+P 6050 3050
+F 0 "#PWR0227" H 6050 2800 50  0001 C CNN
+F 1 "GND" H 6055 2877 50  0001 C CNN
+F 2 "" H 6050 3050 50  0001 C CNN
+F 3 "" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:+3.3V #PWR?
+U 1 1 614B46CD
+P 6050 2250
+AR Path="/614B46CD" Ref="#PWR?"  Part="1" 
+AR Path="/61410FC3/614B46CD" Ref="#PWR0228"  Part="1" 
+F 0 "#PWR0228" H 6050 2100 50  0001 C CNN
+F 1 "+3V3" H 6050 2400 50  0000 L CNN
+F 2 "" H 6050 2250 50  0001 C CNN
+F 3 "" H 6050 2250 50  0001 C CNN
+	1    6050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2250 6050 2300
+Wire Wire Line
+	6050 3050 6050 3000
+Wire Wire Line
+	5400 2400 5550 2400
+Wire Wire Line
+	5550 2400 5550 2300
+Wire Wire Line
+	3500 2400 3150 2400
+Text Label 3150 2400 0    50   ~ 0
+uC_BOOT
+Wire Wire Line
+	3150 5900 3500 5900
+$Comp
+L 00_lib_sch:GND #PWR0229
+U 1 1 614D2A60
+P 3400 6050
+F 0 "#PWR0229" H 3400 5800 50  0001 C CNN
+F 1 "GND" H 3405 5877 50  0001 C CNN
+F 2 "" H 3400 6050 50  0001 C CNN
+F 3 "" H 3400 6050 50  0001 C CNN
+	1    3400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:GND #PWR0230
+U 1 1 614D8191
+P 5500 4750
+F 0 "#PWR0230" H 5500 4500 50  0001 C CNN
+F 1 "GND" H 5505 4577 50  0001 C CNN
+F 2 "" H 5500 4750 50  0001 C CNN
+F 3 "" H 5500 4750 50  0001 C CNN
+	1    5500 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4750 5500 4700
+Wire Wire Line
+	5500 4400 5400 4400
+Wire Wire Line
+	5400 4500 5500 4500
+Connection ~ 5500 4500
+Wire Wire Line
+	5500 4500 5500 4400
+Wire Wire Line
+	5400 4600 5500 4600
+Connection ~ 5500 4600
+Wire Wire Line
+	5500 4600 5500 4500
+Wire Wire Line
+	5400 4700 5500 4700
+Connection ~ 5500 4700
+Wire Wire Line
+	5500 4700 5500 4600
+Text Notes 4450 6700 0    50   ~ 0
+Capacitores de desacople.\nColocar lo mas cercano posible \na los pines del IC en cuestion.
+Connection ~ 5050 6300
+Wire Wire Line
+	5550 6300 5050 6300
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 614F5271
+P 5550 6300
+AR Path="/61438B2D/614F5271" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/614F5271" Ref="#PWR?"  Part="1" 
+AR Path="/61410FC3/614F5271" Ref="#PWR0231"  Part="1" 
+F 0 "#PWR0231" H 5550 6050 50  0001 C CNN
+F 1 "GND" H 5555 6127 50  0001 C CNN
+F 2 "" H 5550 6300 50  0001 C CNN
+F 3 "" H 5550 6300 50  0001 C CNN
+	1    5550 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 6000
+Wire Wire Line
+	5550 6000 5050 6000
+Wire Wire Line
+	4550 6300 5050 6300
+Wire Wire Line
+	4550 6000 5050 6000
+$Comp
+L 00_lib_sch:+3.3V #PWR?
+U 1 1 614F527B
+P 5550 6000
+AR Path="/61438B2D/614F527B" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/614F527B" Ref="#PWR?"  Part="1" 
+AR Path="/61410FC3/614F527B" Ref="#PWR0232"  Part="1" 
+F 0 "#PWR0232" H 5550 5850 50  0001 C CNN
+F 1 "+3V3" H 5565 6173 50  0000 C CNN
+F 2 "" H 5550 6000 50  0001 C CNN
+F 3 "" H 5550 6000 50  0001 C CNN
+	1    5550 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:CP1 C?
+U 1 1 614F5281
+P 4550 6150
+AR Path="/61438B2D/614F5281" Ref="C?"  Part="1" 
+AR Path="/61434A7C/614F5281" Ref="C?"  Part="1" 
+AR Path="/61410FC3/614F5281" Ref="C304"  Part="1" 
+F 0 "C304" H 4665 6196 50  0000 L CNN
+F 1 "10u" H 4665 6105 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4550 6150 50  0001 C CNN
+F 3 "~" H 4550 6150 50  0001 C CNN
+	1    4550 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:C C?
+U 1 1 614F5287
+P 5050 6150
+AR Path="/61438B2D/614F5287" Ref="C?"  Part="1" 
+AR Path="/61434A7C/614F5287" Ref="C?"  Part="1" 
+AR Path="/61410FC3/614F5287" Ref="C305"  Part="1" 
+F 0 "C305" H 5165 6196 50  0000 L CNN
+F 1 "100n" H 5165 6105 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5088 6000 50  0001 C CNN
+F 3 "~" H 5050 6150 50  0001 C CNN
+	1    5050 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3200 5800 3200
+Wire Wire Line
+	5400 3300 5800 3300
+Text Label 5800 3300 2    50   ~ 0
+uC_RX0
+Text Label 5800 3200 2    50   ~ 0
+uC_TX0
+Text Label 3150 5900 0    50   ~ 0
+uC_BOOT
+Wire Wire Line
+	6050 2600 6050 2650
+Wire Wire Line
+	5400 2650 6050 2650
+Connection ~ 6050 2650
+Wire Wire Line
+	6050 2650 6050 2700
+NoConn ~ 5400 2900
+NoConn ~ 5400 3000
+NoConn ~ 5400 3400
+$Comp
+L Connector_Generic:Conn_01x03 J302
+U 1 1 6154DADB
+P 3700 6550
+F 0 "J302" H 3780 6592 50  0000 L CNN
+F 1 "Debug_PROG" H 3780 6501 50  0000 L CNN
+F 2 "00_lib_fp:PinHeader_1x03_P2.54mm_Vertical" H 3700 6550 50  0001 C CNN
+F 3 "~" H 3700 6550 50  0001 C CNN
+	1    3700 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:GND #PWR0233
+U 1 1 6154F995
+P 3450 6700
+F 0 "#PWR0233" H 3450 6450 50  0001 C CNN
+F 1 "GND" H 3455 6527 50  0001 C CNN
+F 2 "" H 3450 6700 50  0001 C CNN
+F 3 "" H 3450 6700 50  0001 C CNN
+	1    3450 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 6700 3450 6650
+Wire Wire Line
+	3450 6650 3500 6650
+Text Label 3250 6450 0    50   ~ 0
+uC_TX0
+Wire Wire Line
+	3250 6450 3500 6450
+Text Label 3250 6550 0    50   ~ 0
+uC_RX0
+Wire Wire Line
+	3250 6550 3500 6550
+NoConn ~ 5400 3650
+NoConn ~ 5400 3750
+NoConn ~ 5400 3850
+NoConn ~ 5400 3950
+NoConn ~ 5400 4050
+NoConn ~ 5400 4150
+Wire Wire Line
+	3400 6050 3400 6000
+Wire Wire Line
+	3400 6000 3500 6000
+$Comp
+L 00_lib_sch:WS2812 D301
+U 1 1 617BAB3E
+P 2200 3800
+F 0 "D301" H 2350 4100 50  0000 L CNN
+F 1 "WS2812" H 1800 3550 50  0000 L CNN
+F 2 "00_lib_fp:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 2250 3500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812.pdf" H 2300 3425 50  0001 L TNN
+	1    2200 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3500 2200 3400
+Wire Wire Line
+	2200 3400 2250 3400
+Wire Wire Line
+	2300 3400 2300 3500
+$Comp
+L 00_lib_sch:+3.3V #PWR?
+U 1 1 61467BB6
+P 5550 2300
+AR Path="/61467BB6" Ref="#PWR?"  Part="1" 
+AR Path="/61410FC3/61467BB6" Ref="#PWR0234"  Part="1" 
+F 0 "#PWR0234" H 5550 2150 50  0001 C CNN
+F 1 "+3V3" H 5600 2450 50  0000 L CNN
+F 2 "" H 5550 2300 50  0001 C CNN
+F 3 "" H 5550 2300 50  0001 C CNN
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3350 2250 3400
+Connection ~ 2250 3400
+Wire Wire Line
+	2250 3400 2300 3400
+$Comp
+L 00_lib_sch:GND #PWR0236
+U 1 1 61583AE9
+P 2200 4150
+F 0 "#PWR0236" H 2200 3900 50  0001 C CNN
+F 1 "GND" H 2205 3977 50  0001 C CNN
+F 2 "" H 2200 4150 50  0001 C CNN
+F 3 "" H 2200 4150 50  0001 C CNN
+	1    2200 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4150 2200 4100
+$Comp
+L 00_lib_sch:+5V #PWR0237
+U 1 1 61660387
+P 9200 2350
+F 0 "#PWR0237" H 9200 2200 50  0001 C CNN
+F 1 "+5V" H 9215 2523 50  0000 C CNN
+F 2 "" H 9200 2350 50  0001 C CNN
+F 3 "" H 9200 2350 50  0001 C CNN
+	1    9200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2400 9200 2400
+Wire Wire Line
+	9200 2400 9200 2350
+Wire Wire Line
+	9050 2500 9200 2500
+Wire Wire Line
+	9200 2500 9200 2400
+Connection ~ 9200 2400
+$Comp
+L 00_lib_sch:GND #PWR0238
+U 1 1 616634E4
+P 9200 4400
+F 0 "#PWR0238" H 9200 4150 50  0001 C CNN
+F 1 "GND" H 9205 4227 50  0000 C CNN
+F 2 "" H 9200 4400 50  0001 C CNN
+F 3 "" H 9200 4400 50  0001 C CNN
+	1    9200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2600 9200 2600
+Wire Wire Line
+	9200 2600 9200 3000
+Wire Wire Line
+	9050 3000 9200 3000
+Connection ~ 9200 3000
+Wire Wire Line
+	9200 3000 9200 3300
+Wire Wire Line
+	9050 3300 9200 3300
+Connection ~ 9200 3300
+Wire Wire Line
+	9200 3300 9200 3800
+Wire Wire Line
+	9050 3800 9200 3800
+Connection ~ 9200 3800
+Wire Wire Line
+	9200 3800 9200 4000
+Wire Wire Line
+	9050 4000 9200 4000
+Connection ~ 9200 4000
+Wire Wire Line
+	9200 4000 9200 4400
+$Comp
+L 00_lib_sch:GND #PWR0239
+U 1 1 6166DB15
+P 7000 4400
+F 0 "#PWR0239" H 7000 4150 50  0001 C CNN
+F 1 "GND" H 7005 4227 50  0000 C CNN
+F 2 "" H 7000 4400 50  0001 C CNN
+F 3 "" H 7000 4400 50  0001 C CNN
+	1    7000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7000 2800
+Wire Wire Line
+	7000 2800 7000 4300
+Wire Wire Line
+	7150 4300 7000 4300
+Connection ~ 7000 4300
+Wire Wire Line
+	7000 4300 7000 4400
+$Comp
+L 00_lib_sch:C C?
+U 1 1 6178024F
+P 1650 2750
+AR Path="/61438B2D/6178024F" Ref="C?"  Part="1" 
+AR Path="/61434A7C/6178024F" Ref="C?"  Part="1" 
+AR Path="/61410FC3/6178024F" Ref="C302"  Part="1" 
+F 0 "C302" H 1350 2800 50  0000 L CNN
+F 1 "100n" H 1350 2700 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1688 2600 50  0001 C CNN
+F 3 "~" H 1650 2750 50  0001 C CNN
+	1    1650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:GND #PWR0240
+U 1 1 61783C58
+P 1650 2950
+F 0 "#PWR0240" H 1650 2700 50  0001 C CNN
+F 1 "GND" H 1655 2777 50  0001 C CNN
+F 2 "" H 1650 2950 50  0001 C CNN
+F 3 "" H 1650 2950 50  0001 C CNN
+	1    1650 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2950 1650 2900
+Wire Wire Line
+	1650 2550 1650 2600
+Text Notes 550  1000 0    276  Italic 55
+CORE
+Wire Notes Line width 39 style solid
+	600  1050 1700 1050
+Text HLabel 1950 4950 0    50   Input ~ 0
+[RED_ALERT_uC]
+Text HLabel 1950 5050 0    50   Input ~ 0
+[GREEN_ALERT_uC]
+Text HLabel 1950 5150 0    50   Input ~ 0
+[YELLOW_ALERT_uC]
+Text HLabel 1950 5300 0    50   Input ~ 0
+[SOUND_ALERT_uC]
+Text HLabel 1950 5500 0    50   Input ~ 0
+[SDA1_uC]
+Text HLabel 1950 5600 0    50   Input ~ 0
+[SCL1_uC]
+Text HLabel 1950 5750 0    50   Input ~ 0
+[SDA2_uC]
+Text HLabel 1950 5850 0    50   Input ~ 0
+[SCL2_uC]
+Text HLabel 1950 6000 0    50   Input ~ 0
+[SDA3_uC]
+Text HLabel 1950 6100 0    50   Input ~ 0
+[SCL3_uC]
+Text HLabel 2900 1650 0    50   Input ~ 0
+[TX_uC]
+Text HLabel 2900 1750 0    50   Input ~ 0
+[RX_uC]
+Wire Wire Line
+	2900 1650 3300 1650
+Wire Wire Line
+	2900 1750 3300 1750
+Text Label 3300 1750 2    50   ~ 0
+uC_RX
+Text Label 3300 1650 2    50   ~ 0
+uC_TX
+$Comp
+L 00_lib_sch:C C?
+U 1 1 61606C97
+P 2150 2750
+AR Path="/61438B2D/61606C97" Ref="C?"  Part="1" 
+AR Path="/61434A7C/61606C97" Ref="C?"  Part="1" 
+AR Path="/61410FC3/61606C97" Ref="C303"  Part="1" 
+F 0 "C303" H 1850 2800 50  0000 L CNN
+F 1 "100n" H 1850 2700 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2188 2600 50  0001 C CNN
+F 3 "~" H 2150 2750 50  0001 C CNN
+	1    2150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:GND #PWR0243
+U 1 1 61606C9D
+P 2150 2950
+F 0 "#PWR0243" H 2150 2700 50  0001 C CNN
+F 1 "GND" H 2155 2777 50  0001 C CNN
+F 2 "" H 2150 2950 50  0001 C CNN
+F 3 "" H 2150 2950 50  0001 C CNN
+	1    2150 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2950 2150 2900
+Wire Wire Line
+	2150 2550 2150 2600
+Wire Wire Line
+	1550 4150 1550 4100
+$Comp
+L 00_lib_sch:GND #PWR0245
+U 1 1 615F8C57
+P 1550 4150
+F 0 "#PWR0245" H 1550 3900 50  0001 C CNN
+F 1 "GND" H 1555 3977 50  0001 C CNN
+F 2 "" H 1550 4150 50  0001 C CNN
+F 3 "" H 1550 4150 50  0001 C CNN
+	1    1550 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3400 1650 3400
+Connection ~ 1600 3400
+Wire Wire Line
+	1600 3350 1600 3400
+Wire Wire Line
+	1650 3400 1650 3500
+Wire Wire Line
+	1550 3400 1600 3400
+Wire Wire Line
+	1550 3500 1550 3400
+$Comp
+L 00_lib_sch:WS2812 D302
+U 1 1 615F61D2
+P 1550 3800
+F 0 "D302" H 1700 4100 50  0000 L CNN
+F 1 "WS2812" H 1150 3550 50  0000 L CNN
+F 2 "00_lib_fp:LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm" H 1600 3500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812.pdf" H 1650 3425 50  0001 L TNN
+	1    1550 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3800 1900 3800
+NoConn ~ 1250 3800
+$Comp
+L 00_lib_sch:+5V #PWR0235
+U 1 1 6162EE1F
+P 1600 3350
+F 0 "#PWR0235" H 1600 3200 50  0001 C CNN
+F 1 "+5V" H 1615 3523 50  0000 C CNN
+F 2 "" H 1600 3350 50  0001 C CNN
+F 3 "" H 1600 3350 50  0001 C CNN
+	1    1600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:+5V #PWR0246
+U 1 1 616310F0
+P 2250 3350
+F 0 "#PWR0246" H 2250 3200 50  0001 C CNN
+F 1 "+5V" H 2265 3523 50  0000 C CNN
+F 2 "" H 2250 3350 50  0001 C CNN
+F 3 "" H 2250 3350 50  0001 C CNN
+	1    2250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:+5V #PWR0241
+U 1 1 61632CC6
+P 2150 2550
+F 0 "#PWR0241" H 2150 2400 50  0001 C CNN
+F 1 "+5V" H 2165 2723 50  0000 C CNN
+F 2 "" H 2150 2550 50  0001 C CNN
+F 3 "" H 2150 2550 50  0001 C CNN
+	1    2150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:+5V #PWR0244
+U 1 1 616333EF
+P 1650 2550
+F 0 "#PWR0244" H 1650 2400 50  0001 C CNN
+F 1 "+5V" H 1665 2723 50  0000 C CNN
+F 2 "" H 1650 2550 50  0001 C CNN
+F 3 "" H 1650 2550 50  0001 C CNN
+	1    1650 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5300 2300 5300
+Text Label 2300 5300 2    50   ~ 0
+SOUND
+Wire Wire Line
+	3500 3800 3150 3800
+Text Label 3150 3800 0    50   ~ 0
+SOUND
+Wire Wire Line
+	1950 5500 2300 5500
+Text Label 2300 5500 2    50   ~ 0
+SDA_1
+Wire Wire Line
+	1950 5600 2300 5600
+Text Label 2300 5600 2    50   ~ 0
+SCL_1
+Wire Wire Line
+	3500 3500 3150 3500
+Text Label 3150 3500 0    50   ~ 0
+SDA_1
+Wire Wire Line
+	3500 3400 3150 3400
+Text Label 3150 3400 0    50   ~ 0
+SCL_1
+Wire Wire Line
+	1950 4950 2300 4950
+Text Label 2300 4950 2    50   ~ 0
+RED
+Wire Wire Line
+	1950 5050 2300 5050
+Text Label 2300 5050 2    50   ~ 0
+GREEN
+Wire Wire Line
+	1950 5150 2300 5150
+Text Label 2300 5150 2    50   ~ 0
+YELLOW
+Wire Wire Line
+	3500 3200 3150 3200
+Text Label 3150 3200 0    50   ~ 0
+RED
+Wire Wire Line
+	3500 2700 3150 2700
+Text Label 3150 2700 0    50   ~ 0
+GREEN
+Wire Wire Line
+	3500 3300 3150 3300
+Text Label 3150 3300 0    50   ~ 0
+YELLOW
+Wire Wire Line
+	3500 2500 3150 2500
+Text Label 3150 2500 0    50   ~ 0
+SDA_3
+Wire Wire Line
+	3500 3100 3150 3100
+Text Label 3150 3100 0    50   ~ 0
+SCL_3
+Wire Wire Line
+	1950 6000 2300 6000
+Text Label 2300 6000 2    50   ~ 0
+SDA_3
+Wire Wire Line
+	1950 6100 2300 6100
+Text Label 2300 6100 2    50   ~ 0
+SCL_3
+Wire Wire Line
+	3500 2900 3150 2900
+Text Label 3150 2900 0    50   ~ 0
+LED_LIVE
+Wire Wire Line
+	2500 3800 2850 3800
+Text Label 2850 3800 2    50   ~ 0
+LED_LIVE
+Wire Wire Line
+	3500 4500 3150 4500
+Wire Wire Line
+	3500 4400 3150 4400
+Text Label 3150 4400 0    50   ~ 0
+uC_TX
+Text Label 3150 4500 0    50   ~ 0
+uC_RX
+Wire Wire Line
+	3500 4000 3150 4000
+Text Label 3150 3900 0    50   ~ 0
+SDA_2
+Wire Wire Line
+	3500 3900 3150 3900
+Text Label 3150 4000 0    50   ~ 0
+SCL_2
+Wire Wire Line
+	1950 5850 2300 5850
+Text Label 2300 5750 2    50   ~ 0
+SDA_2
+Wire Wire Line
+	1950 5750 2300 5750
+Text Label 2300 5850 2    50   ~ 0
+SCL_2
+$Comp
+L 00_lib_sch:Conn_01x02 J301
+U 1 1 617E29B2
+P 3700 5900
+F 0 "J301" H 3780 5892 50  0000 L CNN
+F 1 "BOOT_Mode" H 3780 5801 50  0000 L CNN
+F 2 "00_lib_fp:PinHeader_1x02_P2.54mm_Vertical" H 3700 5900 50  0001 C CNN
+F 3 "" H 3700 5900 50  0001 C CNN
+	1    3700 5900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 6250 0    50   Input ~ 0
+[ADC_uC]
+Wire Wire Line
+	1950 6250 2300 6250
+Text Label 2300 6250 2    50   ~ 0
+ADC
+Text Label 3150 2600 0    50   ~ 0
+ADC
+Wire Wire Line
+	3150 2600 3500 2600
+NoConn ~ 3500 2800
+NoConn ~ 3500 3000
+NoConn ~ 3500 3600
+NoConn ~ 3500 3700
+NoConn ~ 3500 4100
+NoConn ~ 3500 4200
+NoConn ~ 3500 4300
 $EndSCHEMATC

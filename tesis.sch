@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 9
 Title ""
-Date ""
-Rev ""
+Date "2021-10-03"
+Rev "v1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -14,96 +14,220 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4700 1450 2000 4200
-U 61410FC3
-F0 "Core" 50
-F1 "Core.sch" 50
-$EndSheet
-$Sheet
-S 3350 2650 850  950 
+S 3550 3800 850  950 
 U 61438B2D
 F0 "inputs" 50
 F1 "inputs.sch" 50
-F2 "[SCL_inputs]" I R 4200 3500 50 
-F3 "[SDA_inputs]" I R 4200 3400 50 
+F2 "[SCL_inputs]" O R 4400 4650 50 
+F3 "[SDA_inputs]" B R 4400 4550 50 
 $EndSheet
+Wire Wire Line
+	4900 4550 4400 4550
+Wire Wire Line
+	4400 4650 4900 4650
+Wire Wire Line
+	7450 3100 6900 3100
+Wire Wire Line
+	6900 3200 7450 3200
+Wire Wire Line
+	7450 2350 6900 2350
+Wire Wire Line
+	6900 2450 7450 2450
+Wire Wire Line
+	6900 3550 7450 3550
+Wire Wire Line
+	6900 3450 7450 3450
+Wire Wire Line
+	6900 5100 7450 5100
+Wire Wire Line
+	7450 5200 6900 5200
+Wire Wire Line
+	6900 5300 7450 5300
+Wire Wire Line
+	6900 5500 7450 5500
 $Sheet
-S 3100 1450 1100 700 
-U 61391A6D
-F0 "Power" 50
-F1 "Fuente.sch" 50
-F2 "[24VAC_in]" I L 3100 1750 50 
-F3 "[+5VDC]" O R 4200 1500 50 
-F4 "[GND_out]" O R 4200 2100 50 
-F5 "[+3V3DC]" O R 4200 1600 50 
-F6 "[AGND]" I L 3100 1850 50 
-$EndSheet
-Text Label 2550 1750 0    50   ~ 0
-24VAC_IN
-Text Label 2550 1850 0    50   ~ 0
-AGND_IN
-$Comp
-L power:GND #PWR?
-U 1 1 614E69F7
-P 4300 2150
-F 0 "#PWR?" H 4300 1900 50  0001 C CNN
-F 1 "GND" H 4305 1977 50  0001 C CNN
-F 2 "" H 4300 2150 50  0001 C CNN
-F 3 "" H 4300 2150 50  0001 C CNN
-	1    4300 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 2150 4300 2100
-Wire Wire Line
-	4300 2100 4200 2100
-$Comp
-L power:+5V #PWR?
-U 1 1 614E8317
-P 4250 1500
-F 0 "#PWR?" H 4250 1350 50  0001 C CNN
-F 1 "+5V" V 4250 1600 50  0000 L CNN
-F 2 "" H 4250 1500 50  0001 C CNN
-F 3 "" H 4250 1500 50  0001 C CNN
-	1    4250 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4200 1500 4250 1500
-$Comp
-L power:+3V3 #PWR?
-U 1 1 614E88C6
-P 4250 1600
-F 0 "#PWR?" H 4250 1450 50  0001 C CNN
-F 1 "+3V3" V 4250 1700 50  0000 L CNN
-F 2 "" H 4250 1600 50  0001 C CNN
-F 3 "" H 4250 1600 50  0001 C CNN
-	1    4250 1600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4250 1600 4200 1600
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 61A1065D
-P 2100 1850
-F 0 "J?" H 2018 1525 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 2018 1616 50  0000 C CNN
-F 2 "" H 2100 1850 50  0001 C CNN
-F 3 "~" H 2100 1850 50  0001 C CNN
-	1    2100 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2300 1850 3100 1850
-Wire Wire Line
-	2300 1750 3100 1750
-$Sheet
-S 7250 1450 850  950 
+S 7450 1600 850  950 
 U 61434A7C
 F0 "Outputs" 50
 F1 "Outputs.sch" 50
-F2 "[SCL_outputs]" I L 7250 2300 50 
-F3 "[SDA_outputs]" I L 7250 2200 50 
+F2 "[SCL_outputs]" I L 7450 2450 50 
+F3 "[SDA_outputs]" B L 7450 2350 50 
+F4 "[24VAC_outputs]" I L 7450 1700 50 
+F5 "[AGND_outputs]" I L 7450 1800 50 
 $EndSheet
+$Sheet
+S 7450 2900 850  750 
+U 615DBDE4
+F0 "GPS&RTC" 50
+F1 "GPS&RTC.sch" 50
+F2 "[SDA_rtc]" B L 7450 3450 50 
+F3 "[SCL_rtc]" I L 7450 3550 50 
+F4 "[TX_gps]" O L 7450 3100 50 
+F5 "[RX_gps]" I L 7450 3200 50 
+$EndSheet
+$Sheet
+S 4900 1600 2000 4200
+U 61410FC3
+F0 "Core" 50
+F1 "Core.sch" 50
+F2 "[RED_ALERT_uC]" O R 6900 5100 50 
+F3 "[GREEN_ALERT_uC]" O R 6900 5300 50 
+F4 "[YELLOW_ALERT_uC]" O R 6900 5200 50 
+F5 "[SOUND_ALERT_uC]" O R 6900 5500 50 
+F6 "[SDA1_uC]" B L 4900 4550 50 
+F7 "[SCL1_uC]" I L 4900 4650 50 
+F8 "[SDA2_uC]" B R 6900 2350 50 
+F9 "[SCL2_uC]" O R 6900 2450 50 
+F10 "[SDA3_uC]" B R 6900 3450 50 
+F11 "[SCL3_uC]" O R 6900 3550 50 
+F12 "[TX_uC]" O R 6900 3200 50 
+F13 "[RX_uC]" I R 6900 3100 50 
+F14 "[ADC_uC]" I L 4900 2550 50 
+$EndSheet
+Wire Wire Line
+	3100 2300 3200 2300
+Connection ~ 3100 2300
+Wire Wire Line
+	3100 1500 3100 2300
+Wire Wire Line
+	3000 1900 3300 1900
+Connection ~ 3000 1900
+Wire Wire Line
+	3000 1500 3000 1900
+Wire Wire Line
+	1950 1900 3000 1900
+Text Label 3100 1500 1    50   ~ 0
+[AGND_main]
+Wire Wire Line
+	2850 2300 3100 2300
+Text Label 3000 1500 1    50   ~ 0
+[24VAC_main]
+$Sheet
+S 2000 2150 850  500 
+U 6196C28E
+F0 "monitor" 50
+F1 "monitor.sch" 50
+F2 "[AGND_in]" I L 2000 2300 50 
+F3 "[AGND]" O R 2850 2300 50 
+F4 "[current_sen_out]" O R 2850 2550 50 
+$EndSheet
+Wire Wire Line
+	3200 2000 3300 2000
+Wire Wire Line
+	3200 2300 3200 2000
+Wire Wire Line
+	1950 2300 1950 2000
+Wire Wire Line
+	2000 2300 1950 2300
+$Comp
+L 00_lib_sch:Screw_Terminal_01x02 J1
+U 1 1 61A1065D
+P 1750 2000
+F 0 "J1" H 1750 1750 50  0000 C CNN
+F 1 "VAC_IN" H 1750 2150 50  0000 C CNN
+F 2 "00_lib_fp:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1750 2000 50  0001 C CNN
+F 3 "~" H 1750 2000 50  0001 C CNN
+	1    1750 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 1750 4400 1750
+$Comp
+L 00_lib_sch:+3.3V #PWR0105
+U 1 1 614E88C6
+P 4450 1750
+F 0 "#PWR0105" H 4450 1600 50  0001 C CNN
+F 1 "+3V3" V 4450 1850 50  0000 L CNN
+F 2 "" H 4450 1750 50  0001 C CNN
+F 3 "" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 1650 4450 1650
+$Comp
+L 00_lib_sch:+5V #PWR0106
+U 1 1 614E8317
+P 4450 1650
+F 0 "#PWR0106" H 4450 1500 50  0001 C CNN
+F 1 "+5V" V 4450 1750 50  0000 L CNN
+F 2 "" H 4450 1650 50  0001 C CNN
+F 3 "" H 4450 1650 50  0001 C CNN
+	1    4450 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 2250 4400 2250
+Wire Wire Line
+	4500 2300 4500 2250
+$Comp
+L 00_lib_sch:GND #PWR0107
+U 1 1 614E69F7
+P 4500 2300
+F 0 "#PWR0107" H 4500 2050 50  0001 C CNN
+F 1 "GND" H 4505 2127 50  0001 C CNN
+F 2 "" H 4500 2300 50  0001 C CNN
+F 3 "" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3300 1600 1100 700 
+U 61391A6D
+F0 "Power" 50
+F1 "Fuente.sch" 50
+F2 "[24VAC_in]" I L 3300 1900 50 
+F3 "[+5VDC]" O R 4400 1650 50 
+F4 "[GND_out]" O R 4400 2250 50 
+F5 "[+3V3DC]" O R 4400 1750 50 
+F6 "[AGND]" I L 3300 2000 50 
+$EndSheet
+Text Notes 750  1000 0    276  Italic 55
+MAIN
+Wire Notes Line width 39 style solid
+	800  1050 1750 1050
+$Sheet
+S 7450 4350 850  1400
+U 6165BF0A
+F0 "Alerts" 50
+F1 "Alerts.sch" 50
+F2 "[RED_ALERT_in]" I L 7450 5100 50 
+F3 "[YELLOW_ALERT_in]" I L 7450 5200 50 
+F4 "[GREEN_ALERT_in]" I L 7450 5300 50 
+F5 "[SOUND_ALERT_in]" I L 7450 5500 50 
+F6 "[24VAC_alerts]" I L 7450 4450 50 
+F7 "[AGND_alerts]" I L 7450 4550 50 
+$EndSheet
+Text Label 7100 1550 1    50   ~ 0
+[AGND_main]
+Text Label 7200 1550 1    50   ~ 0
+[24VAC_main]
+Wire Wire Line
+	7100 1550 7100 1800
+Wire Wire Line
+	7100 1800 7450 1800
+Wire Wire Line
+	7450 1700 7200 1700
+Wire Wire Line
+	7200 1700 7200 1550
+Text Label 7100 4250 1    50   ~ 0
+[AGND_main]
+Text Label 7200 4250 1    50   ~ 0
+[24VAC_main]
+Wire Wire Line
+	7200 4250 7200 4450
+Wire Wire Line
+	7200 4450 7450 4450
+Wire Wire Line
+	7100 4250 7100 4550
+Wire Wire Line
+	7100 4550 7450 4550
+$Sheet
+S 3900 6150 1200 750 
+U 61622184
+F0 "miscleaneous" 50
+F1 "miscleaneous.sch" 50
+$EndSheet
+Wire Wire Line
+	4900 2550 2850 2550
 $EndSCHEMATC

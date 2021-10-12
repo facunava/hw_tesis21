@@ -1,0 +1,683 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 00_lib_sch:Mac97a8 Q?
+U 1 1 616FE40F
+P 7000 1850
+AR Path="/616FE40F" Ref="Q?"  Part="1" 
+AR Path="/61410FC3/616FE40F" Ref="Q?"  Part="1" 
+AR Path="/61434A7C/616FE40F" Ref="Q?"  Part="1" 
+AR Path="/6165BF0A/616FE40F" Ref="Q602"  Part="1" 
+F 0 "Q602" H 7150 1850 50  0000 L CNN
+F 1 "mac97a8" H 7050 1700 50  0000 L CNN
+F 2 "00_lib_fp:TO-92_Inline" H 7200 1775 50  0001 L CIN
+F 3 "" H 7000 1850 50  0001 L CNN
+	1    7000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:R R604
+U 1 1 616FE41B
+P 5700 2100
+F 0 "R604" V 5600 2050 50  0000 L CNN
+F 1 "470" V 5700 2025 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5630 2100 50  0001 C CNN
+F 3 "~" H 5700 2100 50  0001 C CNN
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2300 5700 2250
+Wire Wire Line
+	5700 1950 5700 1900
+Wire Wire Line
+	5700 1900 5800 1900
+$Comp
+L 00_lib_sch:Q_NMOS_DGS Q601
+U 1 1 616FE424
+P 5400 1450
+F 0 "Q601" H 5605 1450 50  0000 L CNN
+F 1 "bss138" H 5604 1405 50  0001 L CNN
+F 2 "00_lib_fp:SOT-23" H 5600 1550 50  0001 C CNN
+F 3 "~" H 5400 1450 50  0001 C CNN
+	1    5400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1650 5500 1700
+Wire Wire Line
+	5500 1700 5800 1700
+$Comp
+L 00_lib_sch:R R603
+U 1 1 616FE42C
+P 5500 2100
+F 0 "R603" V 5400 2050 50  0000 L CNN
+F 1 "1k" V 5500 2050 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5430 2100 50  0001 C CNN
+F 3 "~" H 5500 2100 50  0001 C CNN
+	1    5500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1950 5500 1700
+Connection ~ 5500 1700
+$Comp
+L 00_lib_sch:+5V #PWR0216
+U 1 1 616FE434
+P 5500 1200
+F 0 "#PWR0216" H 5500 1050 50  0001 C CNN
+F 1 "+5V" H 5515 1373 50  0000 C CNN
+F 2 "" H 5500 1200 50  0001 C CNN
+F 3 "" H 5500 1200 50  0001 C CNN
+	1    5500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1200 5500 1250
+Wire Wire Line
+	5200 1450 5050 1450
+$Comp
+L 00_lib_sch:R R602
+U 1 1 616FE43D
+P 6700 1700
+F 0 "R602" V 6600 1650 50  0000 L CNN
+F 1 "1k" V 6700 1650 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 1700 50  0001 C CNN
+F 3 "~" H 6700 1700 50  0001 C CNN
+	1    6700 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 1900 6650 1900
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 616FE446
+P 5700 2300
+AR Path="/61438B2D/616FE446" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/616FE446" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/616FE446" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 5700 2050 50  0001 C CNN
+F 1 "GND" H 5705 2127 50  0001 C CNN
+F 2 "" H 5700 2300 50  0001 C CNN
+F 3 "" H 5700 2300 50  0001 C CNN
+	1    5700 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 1700 7000 1700
+Wire Wire Line
+	7000 1700 7000 1450
+Connection ~ 7000 1700
+Wire Wire Line
+	6650 1900 6650 1950
+Wire Wire Line
+	6650 1950 6850 1950
+Wire Wire Line
+	7000 2000 7000 2350
+Wire Wire Line
+	5500 2300 5500 2250
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 616FE461
+P 5500 2300
+AR Path="/61438B2D/616FE461" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/616FE461" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/616FE461" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 5500 2050 50  0001 C CNN
+F 1 "GND" H 5505 2127 50  0001 C CNN
+F 2 "" H 5500 2300 50  0001 C CNN
+F 3 "" H 5500 2300 50  0001 C CNN
+	1    5500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:Mac97a8 Q?
+U 1 1 61703A19
+P 7000 3450
+AR Path="/61703A19" Ref="Q?"  Part="1" 
+AR Path="/61410FC3/61703A19" Ref="Q?"  Part="1" 
+AR Path="/61434A7C/61703A19" Ref="Q?"  Part="1" 
+AR Path="/6165BF0A/61703A19" Ref="Q605"  Part="1" 
+F 0 "Q605" H 7150 3450 50  0000 L CNN
+F 1 "mac97a8" H 7050 3300 50  0000 L CNN
+F 2 "00_lib_fp:TO-92_Inline" H 7200 3375 50  0001 L CIN
+F 3 "" H 7000 3450 50  0001 L CNN
+	1    7000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:R R610
+U 1 1 61703A25
+P 5700 3700
+F 0 "R610" V 5600 3650 50  0000 L CNN
+F 1 "470" V 5700 3625 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5630 3700 50  0001 C CNN
+F 3 "~" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3900 5700 3850
+Wire Wire Line
+	5700 3550 5700 3500
+Wire Wire Line
+	5700 3500 5800 3500
+$Comp
+L 00_lib_sch:Q_NMOS_DGS Q603
+U 1 1 61703A2E
+P 5400 3050
+F 0 "Q603" H 5605 3050 50  0000 L CNN
+F 1 "bss138" H 5604 3005 50  0001 L CNN
+F 2 "00_lib_fp:SOT-23" H 5600 3150 50  0001 C CNN
+F 3 "~" H 5400 3050 50  0001 C CNN
+	1    5400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3250 5500 3300
+Wire Wire Line
+	5500 3300 5800 3300
+$Comp
+L 00_lib_sch:R R609
+U 1 1 61703A36
+P 5500 3700
+F 0 "R609" V 5400 3650 50  0000 L CNN
+F 1 "1k" V 5500 3650 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5430 3700 50  0001 C CNN
+F 3 "~" H 5500 3700 50  0001 C CNN
+	1    5500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3550 5500 3300
+Connection ~ 5500 3300
+$Comp
+L 00_lib_sch:+5V #PWR0219
+U 1 1 61703A3E
+P 5500 2800
+F 0 "#PWR0219" H 5500 2650 50  0001 C CNN
+F 1 "+5V" H 5515 2973 50  0000 C CNN
+F 2 "" H 5500 2800 50  0001 C CNN
+F 3 "" H 5500 2800 50  0001 C CNN
+	1    5500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2800 5500 2850
+Wire Wire Line
+	5200 3050 5050 3050
+$Comp
+L 00_lib_sch:R R607
+U 1 1 61703A47
+P 6700 3300
+F 0 "R607" V 6600 3250 50  0000 L CNN
+F 1 "1k" V 6700 3250 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 3300 50  0001 C CNN
+F 3 "~" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 3500 6650 3500
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 61703A50
+P 5700 3900
+AR Path="/61438B2D/61703A50" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/61703A50" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/61703A50" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 5700 3650 50  0001 C CNN
+F 1 "GND" H 5705 3727 50  0001 C CNN
+F 2 "" H 5700 3900 50  0001 C CNN
+F 3 "" H 5700 3900 50  0001 C CNN
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3300 7000 3300
+Wire Wire Line
+	7000 3300 7000 3050
+Connection ~ 7000 3300
+Wire Wire Line
+	6650 3500 6650 3550
+Wire Wire Line
+	6650 3550 6850 3550
+Wire Wire Line
+	7000 3600 7000 3950
+Wire Wire Line
+	5500 3900 5500 3850
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 61703A6B
+P 5500 3900
+AR Path="/61438B2D/61703A6B" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/61703A6B" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/61703A6B" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 5500 3650 50  0001 C CNN
+F 1 "GND" H 5505 3727 50  0001 C CNN
+F 2 "" H 5500 3900 50  0001 C CNN
+F 3 "" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:Mac97a8 Q?
+U 1 1 61705EA7
+P 7000 5000
+AR Path="/61705EA7" Ref="Q?"  Part="1" 
+AR Path="/61410FC3/61705EA7" Ref="Q?"  Part="1" 
+AR Path="/61434A7C/61705EA7" Ref="Q?"  Part="1" 
+AR Path="/6165BF0A/61705EA7" Ref="Q607"  Part="1" 
+F 0 "Q607" H 7150 5000 50  0000 L CNN
+F 1 "mac97a8" H 7050 4850 50  0000 L CNN
+F 2 "00_lib_fp:TO-92_Inline" H 7200 4925 50  0001 L CIN
+F 3 "" H 7000 5000 50  0001 L CNN
+	1    7000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:R R614
+U 1 1 61705EB3
+P 5700 5250
+F 0 "R614" V 5600 5200 50  0000 L CNN
+F 1 "470" V 5700 5175 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5630 5250 50  0001 C CNN
+F 3 "~" H 5700 5250 50  0001 C CNN
+	1    5700 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5450 5700 5400
+Wire Wire Line
+	5700 5100 5700 5050
+Wire Wire Line
+	5700 5050 5800 5050
+$Comp
+L 00_lib_sch:Q_NMOS_DGS Q606
+U 1 1 61705EBC
+P 5400 4600
+F 0 "Q606" H 5605 4600 50  0000 L CNN
+F 1 "bss138" H 5604 4555 50  0001 L CNN
+F 2 "00_lib_fp:SOT-23" H 5600 4700 50  0001 C CNN
+F 3 "~" H 5400 4600 50  0001 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4800 5500 4850
+Wire Wire Line
+	5500 4850 5800 4850
+$Comp
+L 00_lib_sch:R R613
+U 1 1 61705EC4
+P 5500 5250
+F 0 "R613" V 5400 5200 50  0000 L CNN
+F 1 "1k" V 5500 5200 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5430 5250 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5100 5500 4850
+Connection ~ 5500 4850
+$Comp
+L 00_lib_sch:+5V #PWR0222
+U 1 1 61705ECC
+P 5500 4350
+F 0 "#PWR0222" H 5500 4200 50  0001 C CNN
+F 1 "+5V" H 5515 4523 50  0000 C CNN
+F 2 "" H 5500 4350 50  0001 C CNN
+F 3 "" H 5500 4350 50  0001 C CNN
+	1    5500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4350 5500 4400
+Wire Wire Line
+	5200 4600 5050 4600
+$Comp
+L 00_lib_sch:R R612
+U 1 1 61705ED5
+P 6700 4850
+F 0 "R612" V 6600 4800 50  0000 L CNN
+F 1 "1k" V 6700 4800 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 4850 50  0001 C CNN
+F 3 "~" H 6700 4850 50  0001 C CNN
+	1    6700 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 5050 6650 5050
+Text HLabel 1450 7250 0    50   Input ~ 0
+[24VAC_alerts]
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 61705EDE
+P 5700 5450
+AR Path="/61438B2D/61705EDE" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/61705EDE" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/61705EDE" Ref="#PWR0223"  Part="1" 
+F 0 "#PWR0223" H 5700 5200 50  0001 C CNN
+F 1 "GND" H 5705 5277 50  0001 C CNN
+F 2 "" H 5700 5450 50  0001 C CNN
+F 3 "" H 5700 5450 50  0001 C CNN
+	1    5700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4850 7000 4850
+Wire Wire Line
+	7000 4850 7000 4600
+Connection ~ 7000 4850
+Wire Wire Line
+	6650 5050 6650 5100
+Wire Wire Line
+	6650 5100 6850 5100
+Wire Wire Line
+	7000 5150 7000 5500
+Wire Wire Line
+	5500 5450 5500 5400
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 61705EF9
+P 5500 5450
+AR Path="/61438B2D/61705EF9" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/61705EF9" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/61705EF9" Ref="#PWR0224"  Part="1" 
+F 0 "#PWR0224" H 5500 5200 50  0001 C CNN
+F 1 "GND" H 5505 5277 50  0001 C CNN
+F 2 "" H 5500 5450 50  0001 C CNN
+F 3 "" H 5500 5450 50  0001 C CNN
+	1    5500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:R R606
+U 1 1 617D81DB
+P 4900 3050
+F 0 "R606" V 4800 3000 50  0000 L CNN
+F 1 "1k" V 4900 3000 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4830 3050 50  0001 C CNN
+F 3 "~" H 4900 3050 50  0001 C CNN
+	1    4900 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 3050 4100 3050
+$Comp
+L 00_lib_sch:R R601
+U 1 1 617E4286
+P 4900 1450
+F 0 "R601" V 4800 1400 50  0000 L CNN
+F 1 "1k" V 4900 1400 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4830 1450 50  0001 C CNN
+F 3 "~" H 4900 1450 50  0001 C CNN
+	1    4900 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 1450 4100 1450
+$Comp
+L 00_lib_sch:R R611
+U 1 1 6183EAB6
+P 4900 4600
+F 0 "R611" V 4800 4550 50  0000 L CNN
+F 1 "1k" V 4900 4550 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4830 4600 50  0001 C CNN
+F 3 "~" H 4900 4600 50  0001 C CNN
+	1    4900 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4600 4100 4600
+Wire Wire Line
+	2000 3350 2100 3350
+$Comp
+L 00_lib_sch:R R608
+U 1 1 617D499A
+P 2250 3350
+F 0 "R608" V 2150 3300 50  0000 L CNN
+F 1 "1k" V 2250 3300 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2180 3350 50  0001 C CNN
+F 3 "~" H 2250 3350 50  0001 C CNN
+	1    2250 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3600 2850 3550
+$Comp
+L 00_lib_sch:GND #PWR?
+U 1 1 617B9B99
+P 2850 3600
+AR Path="/61438B2D/617B9B99" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/617B9B99" Ref="#PWR?"  Part="1" 
+AR Path="/6165BF0A/617B9B99" Ref="#PWR0225"  Part="1" 
+F 0 "#PWR0225" H 2850 3350 50  0001 C CNN
+F 1 "GND" H 2855 3427 50  0001 C CNN
+F 2 "" H 2850 3600 50  0001 C CNN
+F 3 "" H 2850 3600 50  0001 C CNN
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2900 2900 2900
+Wire Wire Line
+	2850 2800 2850 2900
+$Comp
+L 00_lib_sch:R R605
+U 1 1 617B44EE
+P 2850 2650
+F 0 "R605" V 2750 2600 50  0000 L CNN
+F 1 "1k" V 2850 2600 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2780 2650 50  0001 C CNN
+F 3 "~" H 2850 2650 50  0001 C CNN
+	1    2850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3100 2900 3100
+Wire Wire Line
+	2850 3150 2850 3100
+Wire Wire Line
+	2550 3350 2400 3350
+Wire Wire Line
+	2850 2450 2850 2500
+$Comp
+L 00_lib_sch:+5V #PWR0226
+U 1 1 617A7061
+P 2850 2450
+F 0 "#PWR0226" H 2850 2300 50  0001 C CNN
+F 1 "+5V" H 2865 2623 50  0000 C CNN
+F 2 "" H 2850 2450 50  0001 C CNN
+F 3 "" H 2850 2450 50  0001 C CNN
+	1    2850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:Q_NMOS_DGS Q604
+U 1 1 617A705B
+P 2750 3350
+F 0 "Q604" H 2955 3350 50  0000 L CNN
+F 1 "bss138" H 2954 3305 50  0001 L CNN
+F 2 "00_lib_fp:SOT-23" H 2950 3450 50  0001 C CNN
+F 3 "~" H 2750 3350 50  0001 C CNN
+	1    2750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:Buzzer BZ601
+U 1 1 617100B2
+P 3000 3000
+F 0 "BZ601" H 3152 3029 50  0000 L CNN
+F 1 "Buzzer" H 3152 2938 50  0000 L CNN
+F 2 "00_lib_fp:Buzzer_23x10" V 2975 3100 50  0001 C CNN
+F 3 "~" V 2975 3100 50  0001 C CNN
+	1    3000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00_lib_sch:Screw_Terminal_01x04 J602
+U 1 1 618A45FE
+P 9800 3500
+F 0 "J602" H 9880 3492 50  0000 L CNN
+F 1 "Lights" H 9880 3401 50  0000 L CNN
+F 2 "00_lib_fp:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" H 9800 3500 50  0001 C CNN
+F 3 "~" H 9800 3500 50  0001 C CNN
+	1    9800 3500
+	1    0    0    -1  
+$EndComp
+Text Label 8400 3050 2    50   ~ 0
+YELLOW_LIGHT
+Text Label 8400 4600 2    50   ~ 0
+GREEN_LIGHT
+Text Label 8400 1450 2    50   ~ 0
+RED_LIGHT
+Text Label 9000 3400 0    50   ~ 0
+RED_LIGHT
+Wire Wire Line
+	9000 3400 9600 3400
+Text Label 9000 3500 0    50   ~ 0
+YELLOW_LIGHT
+Wire Wire Line
+	9000 3500 9600 3500
+Text Label 9000 3600 0    50   ~ 0
+GREEN_LIGHT
+Wire Wire Line
+	9000 3600 9600 3600
+Wire Wire Line
+	7000 1450 8400 1450
+Wire Wire Line
+	7000 3050 8400 3050
+Wire Wire Line
+	7000 4600 8400 4600
+Text Notes 550  950  0    276  Italic 55
+ALERTS
+Wire Notes Line width 39 style solid
+	600  1000 2050 1000
+Text HLabel 1450 7350 0    50   Input ~ 0
+[AGND_alerts]
+Wire Wire Line
+	1450 7350 2000 7350
+Text Label 2000 7350 2    50   ~ 0
+AGND
+Text Label 2000 7250 2    50   ~ 0
+24VAC
+Wire Wire Line
+	2000 7250 1450 7250
+Text Label 6700 5500 0    50   ~ 0
+24VAC
+Text Label 6700 3950 0    50   ~ 0
+24VAC
+Wire Wire Line
+	6700 3950 7000 3950
+Wire Wire Line
+	6700 5500 7000 5500
+Text Label 6700 2350 0    50   ~ 0
+24VAC
+Wire Wire Line
+	7000 2350 6700 2350
+Wire Wire Line
+	9000 3700 9600 3700
+Text Label 9000 3700 0    50   ~ 0
+AGND
+Text HLabel 1450 6850 0    50   Input ~ 0
+[GREEN_ALERT_in]
+Text Label 2000 6850 2    50   ~ 0
+GREEN_GATE
+Wire Wire Line
+	2000 6850 1450 6850
+Text HLabel 1450 6750 0    50   Input ~ 0
+[YELLOW_ALERT_in]
+Text HLabel 1450 6650 0    50   Input ~ 0
+[RED_ALERT_in]
+Text Label 2000 6750 2    50   ~ 0
+YELLOW_GATE
+Wire Wire Line
+	2000 6750 1450 6750
+Text Label 2000 6650 2    50   ~ 0
+RED_GATE
+Wire Wire Line
+	2000 6650 1450 6650
+Text Label 4100 1450 0    50   ~ 0
+RED_GATE
+Text Label 4100 3050 0    50   ~ 0
+YELLOW_GATE
+Text Label 4100 4600 0    50   ~ 0
+GREEN_GATE
+Text HLabel 1450 7000 0    50   Input ~ 0
+[SOUND_ALERT_in]
+Wire Wire Line
+	1450 7000 2000 7000
+Text Label 2000 7000 2    50   ~ 0
+SOUND_GATE
+Text Label 2000 3350 2    50   ~ 0
+SOUND_GATE
+$Comp
+L Isolator:4N35 U601
+U 1 1 6167B29B
+P 6100 1800
+F 0 "U601" H 6100 2125 50  0000 C CNN
+F 1 "4N35" H 6100 2034 50  0000 C CNN
+F 2 "00_lib_fp:SMDIP-6_W7.62mm" H 5900 1600 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 6100 1800 50  0001 L CNN
+	1    6100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1800 6500 1800
+Wire Wire Line
+	6500 1800 6500 1700
+Wire Wire Line
+	6500 1700 6550 1700
+NoConn ~ 6400 1700
+$Comp
+L Isolator:4N35 U602
+U 1 1 6168ECF0
+P 6100 3400
+F 0 "U602" H 6100 3725 50  0000 C CNN
+F 1 "4N35" H 6100 3634 50  0000 C CNN
+F 2 "00_lib_fp:SMDIP-6_W7.62mm" H 5900 3200 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 6100 3400 50  0001 L CNN
+	1    6100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3400 6500 3400
+Wire Wire Line
+	6500 3400 6500 3300
+Wire Wire Line
+	6500 3300 6550 3300
+NoConn ~ 6400 3300
+$Comp
+L Isolator:4N35 U603
+U 1 1 61694D39
+P 6100 4950
+F 0 "U603" H 6100 5275 50  0000 C CNN
+F 1 "4N35" H 6100 5184 50  0000 C CNN
+F 2 "00_lib_fp:SMDIP-6_W7.62mm" H 5900 4750 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 6100 4950 50  0001 L CNN
+	1    6100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4950 6500 4950
+Wire Wire Line
+	6500 4950 6500 4850
+Wire Wire Line
+	6500 4850 6550 4850
+NoConn ~ 6400 4850
+$EndSCHEMATC
