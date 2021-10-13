@@ -368,7 +368,6 @@ Wire Wire Line
 	6500 3800 6850 3800
 Wire Wire Line
 	6500 3900 6850 3900
-NoConn ~ 5500 4000
 $Comp
 L 00_lib_sch:Screw_Terminal_01x02 J402
 U 1 1 61A00DC7
@@ -2102,4 +2101,36 @@ Text Label 6850 3700 2    50   ~ 0
 P5
 Text Label 6850 3600 2    50   ~ 0
 P4
+$Comp
+L 00_lib_sch:R R?
+U 1 1 61686280
+P 5300 4000
+AR Path="/61438B2D/61686280" Ref="R?"  Part="1" 
+AR Path="/61434A7C/61686280" Ref="R441"  Part="1" 
+F 0 "R441" V 5200 3950 50  0000 L CNN
+F 1 "10k" V 5300 3925 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5230 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5500 4000 5450 4000
+$Comp
+L 00_lib_sch:+3.3V #PWR?
+U 1 1 61695849
+P 5100 3950
+AR Path="/61438B2D/61695849" Ref="#PWR?"  Part="1" 
+AR Path="/61434A7C/61695849" Ref="#PWR0247"  Part="1" 
+F 0 "#PWR0247" H 5100 3800 50  0001 C CNN
+F 1 "+3V3" H 5115 4123 50  0000 C CNN
+F 2 "" H 5100 3950 50  0001 C CNN
+F 3 "" H 5100 3950 50  0001 C CNN
+	1    5100 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4000 5100 4000
+Wire Wire Line
+	5100 4000 5100 3950
 $EndSCHEMATC

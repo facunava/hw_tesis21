@@ -1,4 +1,4 @@
-19266249477221734
+19267883819872734
 00_lib_fp
 4P4C_narrow
 
@@ -279,6 +279,13 @@ THT Terminal Block Phoenix MKDS-1,5-8-5.08 pitch 5.08mm size 40.6x9.8mm^2 drill 
 0
 8
 8
+00_lib_fp
+TestPoint_Plated_Hole_D2.0mm
+Plated Hole as test Point, diameter 2.0mm
+test point plated hole
+0
+1
+1
 00_lib_fp
 U.FL_Molex_MCRF_73412-0110_Vertical
 Molex Microcoaxial RF Connectors (MCRF), mates Hirose U.FL, (http://www.molex.com/pdm_docs/sd/734120110_sd.pdf)
