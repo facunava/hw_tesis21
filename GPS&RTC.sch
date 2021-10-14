@@ -13,77 +13,77 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 8650 5425
+Connection ~ 8450 5275
 Wire Wire Line
-	9150 5425 8650 5425
+	8950 5275 8450 5275
 $Comp
 L 00_lib_sch:GND #PWR?
 U 1 1 615F146E
-P 9150 5425
+P 8950 5275
 AR Path="/61438B2D/615F146E" Ref="#PWR?"  Part="1" 
 AR Path="/61434A7C/615F146E" Ref="#PWR?"  Part="1" 
 AR Path="/61410FC3/615F146E" Ref="#PWR?"  Part="1" 
 AR Path="/615DBDE4/615F146E" Ref="#PWR0189"  Part="1" 
-F 0 "#PWR0189" H 9150 5175 50  0001 C CNN
-F 1 "GND" H 9155 5252 50  0001 C CNN
-F 2 "" H 9150 5425 50  0001 C CNN
-F 3 "" H 9150 5425 50  0001 C CNN
-	1    9150 5425
+F 0 "#PWR0189" H 8950 5025 50  0001 C CNN
+F 1 "GND" H 8955 5102 50  0001 C CNN
+F 2 "" H 8950 5275 50  0001 C CNN
+F 3 "" H 8950 5275 50  0001 C CNN
+	1    8950 5275
 	1    0    0    -1  
 $EndComp
-Connection ~ 8650 5125
+Connection ~ 8450 4975
 Wire Wire Line
-	9150 5125 8650 5125
+	8950 4975 8450 4975
 Wire Wire Line
-	8150 5425 8650 5425
+	7950 5275 8450 5275
 Wire Wire Line
-	8150 5125 8650 5125
+	7950 4975 8450 4975
 $Comp
 L 00_lib_sch:+3.3V #PWR?
 U 1 1 615F1478
-P 9150 5125
+P 8950 4975
 AR Path="/61438B2D/615F1478" Ref="#PWR?"  Part="1" 
 AR Path="/61434A7C/615F1478" Ref="#PWR?"  Part="1" 
 AR Path="/61410FC3/615F1478" Ref="#PWR?"  Part="1" 
 AR Path="/615DBDE4/615F1478" Ref="#PWR0190"  Part="1" 
-F 0 "#PWR0190" H 9150 4975 50  0001 C CNN
-F 1 "+3V3" H 9165 5298 50  0000 C CNN
-F 2 "" H 9150 5125 50  0001 C CNN
-F 3 "" H 9150 5125 50  0001 C CNN
-	1    9150 5125
+F 0 "#PWR0190" H 8950 4825 50  0001 C CNN
+F 1 "+3V3" H 8965 5148 50  0000 C CNN
+F 2 "" H 8950 4975 50  0001 C CNN
+F 3 "" H 8950 4975 50  0001 C CNN
+	1    8950 4975
 	1    0    0    -1  
 $EndComp
 $Comp
 L 00_lib_sch:CP1 C?
 U 1 1 615F147E
-P 8150 5275
+P 7950 5125
 AR Path="/61438B2D/615F147E" Ref="C?"  Part="1" 
 AR Path="/61434A7C/615F147E" Ref="C?"  Part="1" 
 AR Path="/61410FC3/615F147E" Ref="C?"  Part="1" 
 AR Path="/615DBDE4/615F147E" Ref="C505"  Part="1" 
-F 0 "C505" H 8265 5321 50  0000 L CNN
-F 1 "10u" H 8265 5230 50  0000 L CNN
-F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8150 5275 50  0001 C CNN
-F 3 "~" H 8150 5275 50  0001 C CNN
-	1    8150 5275
+F 0 "C505" H 8065 5171 50  0000 L CNN
+F 1 "10u" H 8065 5080 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7950 5125 50  0001 C CNN
+F 3 "~" H 7950 5125 50  0001 C CNN
+	1    7950 5125
 	1    0    0    -1  
 $EndComp
 $Comp
 L 00_lib_sch:C C?
 U 1 1 615F1484
-P 8650 5275
+P 8450 5125
 AR Path="/61438B2D/615F1484" Ref="C?"  Part="1" 
 AR Path="/61434A7C/615F1484" Ref="C?"  Part="1" 
 AR Path="/61410FC3/615F1484" Ref="C?"  Part="1" 
 AR Path="/615DBDE4/615F1484" Ref="C506"  Part="1" 
-F 0 "C506" H 8765 5321 50  0000 L CNN
-F 1 "100n" H 8765 5230 50  0000 L CNN
-F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8688 5125 50  0001 C CNN
-F 3 "~" H 8650 5275 50  0001 C CNN
-	1    8650 5275
+F 0 "C506" H 8565 5171 50  0000 L CNN
+F 1 "100n" H 8565 5080 50  0000 L CNN
+F 2 "00_lib_fp:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8488 4975 50  0001 C CNN
+F 3 "~" H 8450 5125 50  0001 C CNN
+	1    8450 5125
 	1    0    0    -1  
 $EndComp
-Text Notes 8000 5875 0    50   ~ 0
+Text Notes 7800 5725 0    50   ~ 0
 Capacitores de desacople.\nColocar lo mas cercano posible \na los pines del IC en cuestion.
 $Comp
 L 00_lib_sch:NEO-6M U?
@@ -1002,8 +1002,6 @@ F 3 "" H 4050 4025 50  0001 C CNN
 $EndComp
 Text Notes 550  950  0    276  Italic 55
 GPS&RTC
-Wire Notes Line width 39 style solid
-	600  1000 2950 1000
 Wire Wire Line
 	9250 2650 9650 2650
 Wire Wire Line
@@ -1036,4 +1034,6 @@ Wire Wire Line
 	1300 7250 1700 7250
 Wire Wire Line
 	1300 7350 1700 7350
+Wire Notes Line width 39 style solid
+	600  1000 2525 1000
 $EndSCHEMATC
