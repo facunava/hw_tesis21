@@ -26,19 +26,6 @@ F 3 "" H 7350 2400 60  0000 C CNN
 	1    7350 2400
 	1    0    0    -1  
 $EndComp
-$Comp
-L 00_lib_sch:ESP32-WROOM U?
-U 1 1 614148B6
-P 4450 2950
-AR Path="/614148B6" Ref="U?"  Part="1" 
-AR Path="/61410FC3/614148B6" Ref="U301"  Part="1" 
-F 0 "U301" H 3800 4200 60  0000 C CNN
-F 1 "ESP32-WROOM" H 4850 1000 60  0000 C CNN
-F 2 "00_lib_fp:ESP32-WROOM" H 4800 4300 60  0001 C CNN
-F 3 "" H 4000 3400 60  0001 C CNN
-	1    4450 2950
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7150 2500
 NoConn ~ 7150 2600
 NoConn ~ 7150 2700
@@ -606,8 +593,8 @@ Wire Wire Line
 Text Label 2300 5300 2    50   ~ 0
 SOUND
 Wire Wire Line
-	3500 3800 3150 3800
-Text Label 3150 3800 0    50   ~ 0
+	3500 3000 3150 3000
+Text Label 3150 3000 0    50   ~ 0
 SOUND
 Wire Wire Line
 	1950 5500 2300 5500
@@ -618,12 +605,12 @@ Wire Wire Line
 Text Label 2300 5600 2    50   ~ 0
 SCL_1
 Wire Wire Line
-	3500 3500 3150 3500
-Text Label 3150 3500 0    50   ~ 0
+	3500 3100 3150 3100
+Text Label 3150 3100 0    50   ~ 0
 SDA_1
 Wire Wire Line
-	3500 3400 3150 3400
-Text Label 3150 3400 0    50   ~ 0
+	3500 3200 3150 3200
+Text Label 3150 3200 0    50   ~ 0
 SCL_1
 Wire Wire Line
 	1950 4950 2300 4950
@@ -638,24 +625,24 @@ Wire Wire Line
 Text Label 2300 5150 2    50   ~ 0
 YELLOW
 Wire Wire Line
-	3500 3200 3150 3200
-Text Label 3150 3200 0    50   ~ 0
-RED
-Wire Wire Line
 	3500 2700 3150 2700
 Text Label 3150 2700 0    50   ~ 0
+RED
+Wire Wire Line
+	3500 2800 3150 2800
+Text Label 3150 2800 0    50   ~ 0
 GREEN
 Wire Wire Line
-	3500 3300 3150 3300
-Text Label 3150 3300 0    50   ~ 0
+	3500 2900 3150 2900
+Text Label 3150 2900 0    50   ~ 0
 YELLOW
 Wire Wire Line
-	3500 2500 3150 2500
-Text Label 3150 2500 0    50   ~ 0
+	3500 3500 3150 3500
+Text Label 3150 3500 0    50   ~ 0
 SDA_3
 Wire Wire Line
-	3500 3100 3150 3100
-Text Label 3150 3100 0    50   ~ 0
+	3500 3600 3150 3600
+Text Label 3150 3600 0    50   ~ 0
 SCL_3
 Wire Wire Line
 	1950 6000 2300 6000
@@ -666,28 +653,28 @@ Wire Wire Line
 Text Label 2300 6100 2    50   ~ 0
 SCL_3
 Wire Wire Line
-	3500 2900 3150 2900
-Text Label 3150 2900 0    50   ~ 0
+	3500 2600 3150 2600
+Text Label 3150 2600 0    50   ~ 0
 LED_LIVE
 Wire Wire Line
 	2500 3800 2850 3800
 Text Label 2850 3800 2    50   ~ 0
 LED_LIVE
 Wire Wire Line
-	3500 4500 3150 4500
+	3500 3800 3150 3800
 Wire Wire Line
-	3500 4400 3150 4400
-Text Label 3150 4400 0    50   ~ 0
+	3500 3700 3150 3700
+Text Label 3150 3700 0    50   ~ 0
 uC_TX
-Text Label 3150 4500 0    50   ~ 0
+Text Label 3150 3800 0    50   ~ 0
 uC_RX
 Wire Wire Line
-	3500 4000 3150 4000
-Text Label 3150 3900 0    50   ~ 0
+	3500 3400 3150 3400
+Text Label 3150 3300 0    50   ~ 0
 SDA_2
 Wire Wire Line
-	3500 3900 3150 3900
-Text Label 3150 4000 0    50   ~ 0
+	3500 3300 3150 3300
+Text Label 3150 3400 0    50   ~ 0
 SCL_2
 Wire Wire Line
 	1950 5850 2300 5850
@@ -714,14 +701,10 @@ Wire Wire Line
 	1950 6250 2300 6250
 Text Label 2300 6250 2    50   ~ 0
 ADC
-Text Label 3150 2600 0    50   ~ 0
+Text Label 3150 2500 0    50   ~ 0
 ADC
 Wire Wire Line
-	3150 2600 3500 2600
-NoConn ~ 3500 2800
-NoConn ~ 3500 3000
-NoConn ~ 3500 3600
-NoConn ~ 3500 3700
+	3150 2500 3500 2500
 NoConn ~ 3500 4100
 NoConn ~ 3500 4200
 NoConn ~ 3500 4300
@@ -751,4 +734,21 @@ Wire Wire Line
 Connection ~ 6050 3050
 Wire Wire Line
 	6050 3050 6050 3000
+$Comp
+L 00_lib_sch:ESP32-WROOM U?
+U 1 1 614148B6
+P 4450 2950
+AR Path="/614148B6" Ref="U?"  Part="1" 
+AR Path="/61410FC3/614148B6" Ref="U301"  Part="1" 
+F 0 "U301" H 3800 4200 60  0000 C CNN
+F 1 "ESP32-WROOM" H 4850 1000 60  0000 C CNN
+F 2 "00_lib_fp:ESP32-WROOM" H 4800 4300 60  0001 C CNN
+F 3 "" H 4000 3400 60  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 3900
+NoConn ~ 3500 4000
+NoConn ~ 3500 4400
+NoConn ~ 3500 4500
 $EndSCHEMATC

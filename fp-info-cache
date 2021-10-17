@@ -1,4 +1,4 @@
-19267884518430734
+19269518949166734
 00_lib_fp
 4P4C_narrow
 
@@ -293,6 +293,13 @@ mcrf hirose ufl u.fl microcoaxial
 0
 4
 2
+00_lib_fp
+USB_Micro-B_Molex_47346-0001
+Micro USB B receptable with flange, bottom-mount, SMD, right-angle (http://www.molex.com/pdm_docs/sd/473460001_sd.pdf)
+Micro B USB SMD
+0
+11
+6
 00_lib_fp
 argentina
 

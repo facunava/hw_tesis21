@@ -223,11 +223,22 @@ Wire Wire Line
 Wire Wire Line
 	7100 4550 7450 4550
 $Sheet
-S 3900 6150 1200 750 
+S 3550 5100 850  700 
 U 61622184
 F0 "miscleaneous" 50
 F1 "miscleaneous.sch" 50
 $EndSheet
 Wire Wire Line
 	4900 2550 2850 2550
+$Comp
+L 00_lib_sch:PageIndex #G?
+U 1 1 616C5ACE
+P 4950 6800
+F 0 "#G?" H 5150 7550 60  0001 C CNN
+F 1 "PageIndex" H 4950 6000 60  0001 C CNN
+F 2 "" H 5025 6725 60  0001 C CNN
+F 3 "" H 5025 6725 60  0001 C CNN
+	1    4950 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

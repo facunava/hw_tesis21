@@ -223,7 +223,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 4550 7450 4550
 $Sheet
-S 3900 6150 1200 750 
+S 3550 5100 850  700 
 U 61622184
 F0 "miscleaneous" 50
 F1 "miscleaneous.sch" 50

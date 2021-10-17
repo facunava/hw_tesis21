@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name retro-ciaa)(type Legacy)(uri ${KIPRJMOD}/retro-ciaa.lib)(options "")(descr ""))
+  (lib (name lib_sch)(type Legacy)(uri /home/fnavarro/Desktop/hw_tesis21/lib_sch/lib_sch.lib)(options "")(descr ""))
+)

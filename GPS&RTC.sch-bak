@@ -764,10 +764,6 @@ Text HLabel 1300 6950 0    50   Input ~ 0
 [SDA_rtc]
 Text HLabel 1300 7050 0    50   Input ~ 0
 [SCL_rtc]
-Connection ~ 2500 2400
-Wire Wire Line
-	2500 2400 2650 2400
-Connection ~ 2300 2500
 $Comp
 L 00_lib_sch:R R?
 U 1 1 6161102E
@@ -794,8 +790,6 @@ F 3 "" H 2300 2150 50  0001 C CNN
 	1    2300 2150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2500 2400 2500 2300
 $Comp
 L 00_lib_sch:+3.3V #PWR?
 U 1 1 6161AB41
@@ -830,12 +824,6 @@ F 3 "" H 2300 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 1950 2300 2000
-Wire Wire Line
-	2300 2500 2650 2500
-Wire Wire Line
-	2300 2500 2300 2300
-Wire Wire Line
-	2300 4325 2750 4325
 $Comp
 L 00_lib_sch:+3.3V #PWR?
 U 1 1 61629F83
@@ -915,12 +903,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 4475 3850 4325
 Connection ~ 3850 4325
-Wire Wire Line
-	2300 2500 2300 4325
-Wire Wire Line
-	2750 4225 2500 4225
-Wire Wire Line
-	2500 2400 2500 4225
 Connection ~ 3850 3825
 $Comp
 L 00_lib_sch:R R?
@@ -1012,12 +994,8 @@ Text HLabel 1300 7350 0    50   Input ~ 0
 [RX_gps]
 Text Label 1850 2400 0    50   ~ 0
 SCL_rtc
-Wire Wire Line
-	1850 2400 2500 2400
 Text Label 1850 2500 0    50   ~ 0
 SDA_rtc
-Wire Wire Line
-	1850 2500 2300 2500
 Text Label 1700 7050 2    50   ~ 0
 SCL_rtc
 Text Label 1700 6950 2    50   ~ 0
@@ -1036,4 +1014,26 @@ Wire Wire Line
 	1300 7350 1700 7350
 Wire Notes Line width 39 style solid
 	600  1000 2525 1000
+Wire Wire Line
+	1850 2400 2500 2400
+Wire Wire Line
+	2650 2500 2300 2500
+Wire Wire Line
+	2300 2300 2300 2500
+Connection ~ 2300 2500
+Wire Wire Line
+	2300 2500 1850 2500
+Wire Wire Line
+	2500 2300 2500 2400
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2400 2650 2400
+Wire Wire Line
+	2300 2500 2300 4225
+Wire Wire Line
+	2300 4225 2750 4225
+Wire Wire Line
+	2500 2400 2500 4325
+Wire Wire Line
+	2500 4325 2750 4325
 $EndSCHEMATC

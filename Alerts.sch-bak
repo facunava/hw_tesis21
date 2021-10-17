@@ -16,16 +16,16 @@ $EndDescr
 $Comp
 L 00_lib_sch:Mac97a8 Q?
 U 1 1 616FE40F
-P 7000 1850
+P 7500 1850
 AR Path="/616FE40F" Ref="Q?"  Part="1" 
 AR Path="/61410FC3/616FE40F" Ref="Q?"  Part="1" 
 AR Path="/61434A7C/616FE40F" Ref="Q?"  Part="1" 
 AR Path="/6165BF0A/616FE40F" Ref="Q602"  Part="1" 
-F 0 "Q602" H 7150 1850 50  0000 L CNN
-F 1 "mac97a8" H 7050 1700 50  0000 L CNN
-F 2 "00_lib_fp:TO-92_Inline" H 7200 1775 50  0001 L CIN
-F 3 "" H 7000 1850 50  0001 L CNN
-	1    7000 1850
+F 0 "Q602" H 7650 1850 50  0000 L CNN
+F 1 "mac97a8" H 7550 1700 50  0000 L CNN
+F 2 "00_lib_fp:TO-92_Inline" H 7700 1775 50  0001 L CIN
+F 3 "" H 7500 1850 50  0001 L CNN
+	1    7500 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -92,16 +92,14 @@ Wire Wire Line
 $Comp
 L 00_lib_sch:R R602
 U 1 1 616FE43D
-P 6700 1700
-F 0 "R602" V 6600 1650 50  0000 L CNN
-F 1 "1k" V 6700 1650 50  0000 L CNN
-F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 1700 50  0001 C CNN
-F 3 "~" H 6700 1700 50  0001 C CNN
-	1    6700 1700
+P 7200 1700
+F 0 "R602" V 7100 1650 50  0000 L CNN
+F 1 "1k" V 7200 1650 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7130 1700 50  0001 C CNN
+F 3 "~" H 7200 1700 50  0001 C CNN
+	1    7200 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6400 1900 6650 1900
 $Comp
 L 00_lib_sch:GND #PWR?
 U 1 1 616FE446
@@ -117,16 +115,16 @@ F 3 "" H 5700 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 1700 7000 1700
+	7350 1700 7500 1700
 Wire Wire Line
-	7000 1700 7000 1450
-Connection ~ 7000 1700
+	7500 1700 7500 1450
+Connection ~ 7500 1700
 Wire Wire Line
-	6650 1900 6650 1950
+	7150 1900 7150 1950
 Wire Wire Line
-	6650 1950 6850 1950
+	7150 1950 7350 1950
 Wire Wire Line
-	7000 2000 7000 2350
+	7500 2000 7500 2350
 Wire Wire Line
 	5500 2300 5500 2250
 $Comp
@@ -146,16 +144,16 @@ $EndComp
 $Comp
 L 00_lib_sch:Mac97a8 Q?
 U 1 1 61703A19
-P 7000 3450
+P 7500 3450
 AR Path="/61703A19" Ref="Q?"  Part="1" 
 AR Path="/61410FC3/61703A19" Ref="Q?"  Part="1" 
 AR Path="/61434A7C/61703A19" Ref="Q?"  Part="1" 
 AR Path="/6165BF0A/61703A19" Ref="Q605"  Part="1" 
-F 0 "Q605" H 7150 3450 50  0000 L CNN
-F 1 "mac97a8" H 7050 3300 50  0000 L CNN
-F 2 "00_lib_fp:TO-92_Inline" H 7200 3375 50  0001 L CIN
-F 3 "" H 7000 3450 50  0001 L CNN
-	1    7000 3450
+F 0 "Q605" H 7650 3450 50  0000 L CNN
+F 1 "mac97a8" H 7550 3300 50  0000 L CNN
+F 2 "00_lib_fp:TO-92_Inline" H 7700 3375 50  0001 L CIN
+F 3 "" H 7500 3450 50  0001 L CNN
+	1    7500 3450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -222,12 +220,12 @@ Wire Wire Line
 $Comp
 L 00_lib_sch:R R607
 U 1 1 61703A47
-P 6700 3300
-F 0 "R607" V 6600 3250 50  0000 L CNN
-F 1 "1k" V 6700 3250 50  0000 L CNN
-F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 3300 50  0001 C CNN
-F 3 "~" H 6700 3300 50  0001 C CNN
-	1    6700 3300
+P 7200 3300
+F 0 "R607" V 7100 3250 50  0000 L CNN
+F 1 "1k" V 7200 3250 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7130 3300 50  0001 C CNN
+F 3 "~" H 7200 3300 50  0001 C CNN
+	1    7200 3300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -247,16 +245,14 @@ F 3 "" H 5700 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 3300 7000 3300
+	7350 3300 7500 3300
 Wire Wire Line
-	7000 3300 7000 3050
-Connection ~ 7000 3300
+	7500 3300 7500 3050
+Connection ~ 7500 3300
 Wire Wire Line
 	6650 3500 6650 3550
 Wire Wire Line
-	6650 3550 6850 3550
-Wire Wire Line
-	7000 3600 7000 3950
+	7500 3600 7500 3950
 Wire Wire Line
 	5500 3900 5500 3850
 $Comp
@@ -276,16 +272,16 @@ $EndComp
 $Comp
 L 00_lib_sch:Mac97a8 Q?
 U 1 1 61705EA7
-P 7000 5000
+P 7500 5000
 AR Path="/61705EA7" Ref="Q?"  Part="1" 
 AR Path="/61410FC3/61705EA7" Ref="Q?"  Part="1" 
 AR Path="/61434A7C/61705EA7" Ref="Q?"  Part="1" 
 AR Path="/6165BF0A/61705EA7" Ref="Q607"  Part="1" 
-F 0 "Q607" H 7150 5000 50  0000 L CNN
-F 1 "mac97a8" H 7050 4850 50  0000 L CNN
-F 2 "00_lib_fp:TO-92_Inline" H 7200 4925 50  0001 L CIN
-F 3 "" H 7000 5000 50  0001 L CNN
-	1    7000 5000
+F 0 "Q607" H 7650 5000 50  0000 L CNN
+F 1 "mac97a8" H 7550 4850 50  0000 L CNN
+F 2 "00_lib_fp:TO-92_Inline" H 7700 4925 50  0001 L CIN
+F 3 "" H 7500 5000 50  0001 L CNN
+	1    7500 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,16 +348,14 @@ Wire Wire Line
 $Comp
 L 00_lib_sch:R R612
 U 1 1 61705ED5
-P 6700 4850
-F 0 "R612" V 6600 4800 50  0000 L CNN
-F 1 "1k" V 6700 4800 50  0000 L CNN
-F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6630 4850 50  0001 C CNN
-F 3 "~" H 6700 4850 50  0001 C CNN
-	1    6700 4850
+P 7200 4850
+F 0 "R612" V 7100 4800 50  0000 L CNN
+F 1 "1k" V 7200 4800 50  0000 L CNN
+F 2 "00_lib_fp:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7130 4850 50  0001 C CNN
+F 3 "~" H 7200 4850 50  0001 C CNN
+	1    7200 4850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6400 5050 6650 5050
 Text HLabel 1450 7250 0    50   Input ~ 0
 [24VAC_alerts]
 $Comp
@@ -379,16 +373,16 @@ F 3 "" H 5700 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 4850 7000 4850
+	7350 4850 7500 4850
 Wire Wire Line
-	7000 4850 7000 4600
-Connection ~ 7000 4850
+	7500 4850 7500 4600
+Connection ~ 7500 4850
 Wire Wire Line
-	6650 5050 6650 5100
+	7150 5050 7150 5100
 Wire Wire Line
-	6650 5100 6850 5100
+	7150 5100 7350 5100
 Wire Wire Line
-	7000 5150 7000 5500
+	7500 5150 7500 5500
 Wire Wire Line
 	5500 5450 5500 5400
 $Comp
@@ -540,11 +534,11 @@ F 3 "~" H 9800 3500 50  0001 C CNN
 	1    9800 3500
 	1    0    0    -1  
 $EndComp
-Text Label 8400 3050 2    50   ~ 0
+Text Label 8900 3050 2    50   ~ 0
 YELLOW_LIGHT
-Text Label 8400 4600 2    50   ~ 0
+Text Label 8900 4600 2    50   ~ 0
 GREEN_LIGHT
-Text Label 8400 1450 2    50   ~ 0
+Text Label 8900 1450 2    50   ~ 0
 RED_LIGHT
 Text Label 9000 3400 0    50   ~ 0
 RED_LIGHT
@@ -559,11 +553,11 @@ GREEN_LIGHT
 Wire Wire Line
 	9000 3600 9600 3600
 Wire Wire Line
-	7000 1450 8400 1450
+	7500 1450 8900 1450
 Wire Wire Line
-	7000 3050 8400 3050
+	7500 3050 8900 3050
 Wire Wire Line
-	7000 4600 8400 4600
+	7500 4600 8900 4600
 Text Notes 550  950  0    276  Italic 55
 ALERTS
 Wire Notes Line width 39 style solid
@@ -578,18 +572,18 @@ Text Label 2000 7250 2    50   ~ 0
 24VAC
 Wire Wire Line
 	2000 7250 1450 7250
-Text Label 6700 5500 0    50   ~ 0
+Text Label 7200 5500 0    50   ~ 0
 24VAC
-Text Label 6700 3950 0    50   ~ 0
-24VAC
-Wire Wire Line
-	6700 3950 7000 3950
-Wire Wire Line
-	6700 5500 7000 5500
-Text Label 6700 2350 0    50   ~ 0
+Text Label 7200 3950 0    50   ~ 0
 24VAC
 Wire Wire Line
-	7000 2350 6700 2350
+	7200 3950 7500 3950
+Wire Wire Line
+	7200 5500 7500 5500
+Text Label 7200 2350 0    50   ~ 0
+24VAC
+Wire Wire Line
+	7500 2350 7200 2350
 Wire Wire Line
 	9000 3700 9600 3700
 Text Label 9000 3700 0    50   ~ 0
@@ -638,12 +632,9 @@ F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 6100 1800 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 1800 6500 1800
+	7000 1800 7000 1700
 Wire Wire Line
-	6500 1800 6500 1700
-Wire Wire Line
-	6500 1700 6550 1700
-NoConn ~ 6400 1700
+	7000 1700 7050 1700
 $Comp
 L Isolator:4N35 U602
 U 1 1 6168ECF0
@@ -656,12 +647,9 @@ F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 6100 3400 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 3400 6500 3400
+	7000 3400 7000 3300
 Wire Wire Line
-	6500 3400 6500 3300
-Wire Wire Line
-	6500 3300 6550 3300
-NoConn ~ 6400 3300
+	7000 3300 7050 3300
 $Comp
 L Isolator:4N35 U603
 U 1 1 61694D39
@@ -674,10 +662,67 @@ F 3 "https://www.vishay.com/docs/81181/4n35.pdf" H 6100 4950 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 4950 6500 4950
+	7000 4950 7000 4850
 Wire Wire Line
-	6500 4950 6500 4850
+	7000 4850 7050 4850
+$Comp
+L 00_lib_sch:jumper JP602
+U 1 1 61909D95
+P 6675 3300
+F 0 "JP602" H 6675 3505 50  0001 C CNN
+F 1 "jumper" H 6675 3414 50  0001 C CNN
+F 2 "00_lib_fp:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6675 3300 50  0001 C CNN
+F 3 "~" H 6675 3300 50  0001 C CNN
+	1    6675 3300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6500 4850 6550 4850
-NoConn ~ 6400 4850
+	6525 3300 6400 3300
+Wire Wire Line
+	6825 3300 7000 3300
+Connection ~ 7000 3300
+Wire Wire Line
+	6400 3400 7000 3400
+$Comp
+L 00_lib_sch:jumper JP601
+U 1 1 6193194B
+P 6675 1700
+F 0 "JP601" H 6675 1905 50  0001 C CNN
+F 1 "jumper" H 6675 1814 50  0001 C CNN
+F 2 "00_lib_fp:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6675 1700 50  0001 C CNN
+F 3 "~" H 6675 1700 50  0001 C CNN
+	1    6675 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 1700 6400 1700
+Wire Wire Line
+	6825 1700 7000 1700
+Connection ~ 7000 1700
+Wire Wire Line
+	6400 1800 7000 1800
+Wire Wire Line
+	6400 1900 7150 1900
+Wire Wire Line
+	6400 4950 7000 4950
+Wire Wire Line
+	6400 5050 7150 5050
+Wire Wire Line
+	6650 3550 7350 3550
+$Comp
+L 00_lib_sch:jumper JP603
+U 1 1 6194F7F5
+P 6675 4850
+F 0 "JP603" H 6675 5055 50  0001 C CNN
+F 1 "jumper" H 6675 4964 50  0001 C CNN
+F 2 "00_lib_fp:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6675 4850 50  0001 C CNN
+F 3 "~" H 6675 4850 50  0001 C CNN
+	1    6675 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 4850 6400 4850
+Wire Wire Line
+	6825 4850 7000 4850
+Connection ~ 7000 4850
 $EndSCHEMATC
